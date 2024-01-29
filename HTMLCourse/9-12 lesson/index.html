@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Nineth lesson-->
+    <!--Style Tags-->
+    <!--Style tags possibly write inner styles in the HTML document -->
+
+    <h1
+      style="
+        border: 2px, solid, green;
+        color: rgb(rgb(150, 56, 56), green, blue);
+        background-color: yellow;
+      "
+    >
+      Header
+    </h1>
+    <a
+      href="http://www.instagram.com"
+      style="background-color: cyan; visibility: collapse; opacity: 0.5"
+      >Instagram</a
+    >
+    <a
+      href="http://www.instagram.com"
+      style="background-color: cyan; opacity: 0.5"
+      >Instagram</a
+    >
+    <!--Style changes appearance HTML blocks and elements.It is code which collection is colour,display, etc -->
+    <!--Tag of style consists of all style codes in the HTML documents,attribute of style is only fixed tag or elements-->
+    <!--width and height change any tag's elements  width and height-->
+    <!--Border is used to give colour,size and to choose  a border type for element's border in the CSS-->
+    <!--Bacground-colour and color are used to give colour element's bacground-->
+    <!--Border - collapse remove border if similar border has HTML blocks or Tables -->
+    <!--If tags are dim on the page, We are used opacity,display and visibility.  -->
+    <!--Display is changed HTML element's  terms of use-->
+
+    <!--Ten'th Lesson-->
+
+    <!--Id and class-->
+    <!--If we want to change HTML elemnent's appearance or terms of use we need to mark it.That does  through id or classes. -->
+    <!--Id is unique and only word or collect of marks and letters,class is similar to Id,but we give some classes to elements.that helps to separate  similar classes  -->
+
+    <h1 id="letters">Letters collection</h1>
+    <p class="letter">we write letters through lorem words</p>
+    <p class="letter text">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, quas?
+    </p>
+    <style>
+      #letters {
+        background-color: aquamarine;
+      }
+      .letter {
+        color: antiquewhite;
+        background-color: black;
+      }
+      .text {
+        background-color: blue;
+      }
+    </style>
+
+    <!--Eleventh Lesson-->
+    <!--Image tags-->
+    <!--Image tags is used to fix images in the HTML document.-->
+    <!--<img
+      src="@AnimalsNaturePhoto (16).jpg"
+      alt="Acer predator"
+      width="600px"
+      height="600px"
+    />-->
+    <!--only width and height work in image tags-->
+    <a href="http://www.acer.com"
+      ><img
+        src="@AnimalsNaturePhoto (16).jpg"
+        alt="Acer predator"
+        width="900px"
+        height="600px"
+        usemap="acer"
+      />
+    </a>
+
+    <!--Map tag-->
+    <!--Map tag separates image some parts-->
+    <!--area tag points marked part of image for link-->
+
+    <img
+      src="@AnimalsNaturePhoto (16).jpg"
+      alt="Acer predator"
+      width="900px"
+      height="600px"
+      usemap="#acerasus"
+    />
+
+    <map name="acerasus">
+      <area
+        shape="rect"
+        coords="0,1000,100,300"
+        href="https://www.asus.com"
+        alt="asus"
+      />
+      <area
+        shape="rectangle"
+        coords="150,200,100,150"
+        href="https:
+    //wwww.acer.com"
+        alt="acer"
+      />
+    </map>
+
+    <pre></pre>
+
+    <!--Answers-->
+    <!--image tag is used to fix images in the HTML document -->
+    <!--Iamge's attributes are some attributes.For source of image is src attribute.It watch direct data of image.For alternative gap of image is alt attribute.For point image is usemap.width and height are used to install image's height and width only image tag. -->
+    <!--if src does'nt use in image tag,display doe'snt watch anything.-->
+    <!--map is used to separate some parts image,after different links install these parts -->
+    <!--map's attribute is name.Name directs way for image's source-->
+    <!--Because image's quality destroys-->
+    <!--area points poly and links ,For example circle,rectangle or poly on the image.Shape attribute  through choses type poly.coord enters coordinats of poly.href gives link for separated poly.  -->
+    <!--If web page's size change other size picture tag choices alternative image for this size.source chose images source for picture tags-->
+    <!--souce tag has media,srcset attributes,media enters special size of webpage,srcset  gives image this size-->
+
+    <!--The twelfth Lesson-->
+    <!--Tables-->
+    <!--Table consists of rows and columns.X-axis line is named row.Y-axis line is named column.The area X_Y points bounded is named Cell. -->
+    <!--Table builds through table tag after it consist of tr(row),td(column) and th(header column) -->
+    <table border="1">
+      <!--row 1-->
+      <tr>
+        <td></td>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+      </tr>
+      <!--row 2-->
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+      <!--row 3-->
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+      <!--row 4-->
+      <tr>
+        <td class="tdtag">1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+    </table>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      .tdtag {
+        width: 20px;
+        text-decoration-color: blue;
+        background-color: blue;
+      }
+    </style>
+    <!--If we give border - collapse to collapse border lose on page-->
+
+    <!--th- tag is more bolder text than td tag's text-->
+
+    <!--Table Spans-->
+    <!--rowspan and colspan give different possible for separate or remove table lines in the table.rowspan is used to attach rows.colspan is used to attach columns.both tags write in the td or th tag -->
+    <hr />
+    <table border="2">
+      <colgroup>
+        <col span="1" style="background-color: aqua; border-style: dotted" />
+        <col span="1" />
+        <col span="1 " style="background-color: blue" />
+      </colgroup>
+      <tr>
+        <td>№</td>
+        <td colspan="3">2022</td>
+      </tr>
+      <tr>
+        <td rowspan="3">
+          <table border="1" class="innertable">
+            <tr>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>2</td>
+            </tr>
+          </table>
+        </td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td colspan="2">Festival</td>
+
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+    </table>
+    <style>
+      .innertable {
+        border-collapse: collapse;
+        height: max-content;
+      }
+    </style>
+
+    <!--Colgroup is used to choice table row.It is through col tag to choice table's row.then we change styles rows.If we want to choice only second or third tag we write one in the first col after we write second col tag and wo enter 2 -->
+  </body>
+</html>
