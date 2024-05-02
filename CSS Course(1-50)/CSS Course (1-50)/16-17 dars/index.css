@@ -1,0 +1,28 @@
+.container {
+  height: 100vh;
+  margin: 20px;
+  border: 1px solid blue;
+  /*If we give display flex, blocks settle next to each other  */
+  display: flex;
+  /*we may different direction to flex blocks through flex-direction. For example: row(x-axis and it is auto though we aren't given),row-rewerse(blocks settle with  reverse order),column(y-axis),column-reverse(blocks settle with  reverse order in y -axis)
+    */
+  flex-direction: column-reverse;
+  /*if we change monitor's size blocks don't settle itself place, we use flex-wrap and it wraps flexible position*/
+  /*flex -wrap  accepts wrap,nowrap(auto),wrap-reverse(blocks settle with  reverse order in the smaller place) */
+  flex-wrap: wrap-reverse;
+}
+.item {
+  height: 50px;
+  width: 50px;
+  border: 2px dotted red;
+  margin: 10px;
+}
+
+.item1 {
+  flex: 1;
+}
+/*flex ratio give n number,we divide column or row to n+1 part and given part possession n part its  */
+.item2 {
+  flex: 2;
+}
+/*If we give value to other items,column or row divides total ratio's parts and every other possession itself part*/
