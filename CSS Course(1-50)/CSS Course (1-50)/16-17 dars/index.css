@@ -1,47 +1,47 @@
-.container {
+/* .container {
   height: 100vh;
   margin: 20px;
   border: 1px solid blue;
   text-align: center;
   /*If we give display flex, blocks settle next to each other  */
-  display: flex;
-  /*we may different direction to flex blocks through flex-direction. For example: row(x-axis and it is auto though we aren't given),row-rewerse(blocks settle with  reverse order),column(y-axis),column-reverse(blocks settle with  reverse order in y -axis)
+/* display: flex; */
+/*we may different direction to flex blocks through flex-direction. For example: row(x-axis and it is auto though we aren't given),row-rewerse(blocks settle with  reverse order),column(y-axis),column-reverse(blocks settle with  reverse order in y -axis)
     */
-  /* flex-direction: column-reverse; */
-  /*if we change monitor's size blocks don't settle itself place, we use flex-wrap and it wraps flexible position*/
-  /*flex -wrap  accepts wrap,nowrap(auto),wrap-reverse(blocks settle with  reverse order in the smaller place) */
-  /* flex-wrap: wrap-reverse; */
-  /*flex-flow is flow-wrap+flow-direction.it contain in directions and wrap functions.now we shut off flex-wrap and flex-direction,then shut on flex-flow.it may give flex-wrap elemnts also flex direction elements when they write nearly each other with empty space */
-  /* flex-flow: wrap column-reverse; */
-  /* justify-content settles blocks in x-axis's center.it gives several useful values.they are:
+/* flex-direction: column-reverse; */
+/*if we change monitor's size blocks don't settle itself place, we use flex-wrap and it wraps flexible position*/
+/*flex -wrap  accepts wrap,nowrap(auto),wrap-reverse(blocks settle with  reverse order in the smaller place) */
+/* flex-wrap: wrap-reverse; */
+/*flex-flow is flow-wrap+flow-direction.it contain in directions and wrap functions.now we shut off flex-wrap and flex-direction,then shut on flex-flow.it may give flex-wrap elemnts also flex direction elements when they write nearly each other with empty space */
+/* flex-flow: wrap column-reverse; */
+/* justify-content settles blocks in x-axis's center.it gives several useful values.they are:
   space-between -   items have space between them,
   center- items settle in center
   space-evenly Items  have equal space around them
   flex-start is default value
   flex-end Items are positioned at the end of the container */
-  /* justify-content: space-between; */
-  /* align-items settles blocks in y-axis's center.it gives several useful values.they are:
+/* justify-content: space-between; */
+/* align-items settles blocks in y-axis's center.it gives several useful values.they are:
   space-between -  items have space between them,
   center- items settle in center
   space-evenly Items  have equal space around them
   flex-start is default value
   flex-end Items are positioned at the end of the container */
-  align-items: center;
-  /* align-content, if items are more and  monitor size is small,align content divide empty space each bloks' row*/
-  align-content: center;
-  /* gap is use inside on margin,if we give margin to elemnts two elemnt's margins add and  appear unexpected space between blocks. gap means space between blocks.gap gives properties.they are row-gap separates empty space every row blocks,
+/* align-items: center; */
+/* align-content, if items are more and  monitor size is small,align content divide empty space each bloks' row*/
+/* align-content: center; */
+/* gap is use inside on margin,if we give margin to elemnts two elemnt's margins add and  appear unexpected space between blocks. gap means space between blocks.gap gives properties.they are row-gap separates empty space every row blocks,
   column-gap separates empty space every column blocks*/
-  /* gap: 25px; */
-  /* flex-direction: column; */
-  row-gap: 50px;
-  column-gap: 50px;
-}
-.item {
+/* gap: 25px; */
+/* flex-direction: column; */
+/* row-gap: 50px; */
+/* column-gap: 50px; */
+/* } */
+/* .item {
   height: 50px;
   width: 50px;
   border: 2px dotted red;
   /* margin: 10px; */
-}
+/* }  */
 
 .item1 {
   /* flex: 1; */
@@ -51,3 +51,126 @@
   /* flex: 1; */
 }
 /*If we give value to other items,column or row divides total ratio's parts and every other possession itself part*/
+
+/* Seventeen's lesson */
+/* Train flex elemnts */
+/* .con {
+  height: 100vh;
+ 
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 10px;
+}  
+ .header,
+.navbar,
+.article,
+.ads,
+.footer {
+  background-color: yellow;
+  font-size: 24px;
+  
+}
+
+.header {
+  flex: 2;
+}
+
+.others {
+  flex: 6;
+  display: flex;
+  gap: 10px;
+}
+.navbar {
+  flex: 2;
+  
+}
+.items {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.datas {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+  
+}
+.article {
+  flex: 4;
+ 
+}
+.ads {
+  flex: 2;
+}
+.footer {
+ flex: 1;
+}  */
+
+/* Second exercise */
+
+.container {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border: 2px red;
+  gap: 2px;
+}
+.header {
+  flex: 1;
+  background-color:darkgrey;
+  font-size: large;
+  text-transform: capitalize;
+  
+  text-shadow: 3px 2px;
+}
+.grand {
+  flex: 8;
+  display: flex;
+  gap: 10px;
+}
+.nav {
+  flex: 2;
+  background-color: rgba(124, 122, 19, 0.349) ;
+}
+.parent {
+  flex: 6;
+  text-align: center;
+  font-size: larger;
+  text-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contents {
+  flex: 4;
+  display: flex;
+  gap: 10px;
+}
+.left {
+  flex: 3;
+  background-color: darkolivegreen;
+}
+.center {
+  flex: 5;
+  background-color: brown;
+}
+.right {
+  flex:4;
+  background-color: darkgray;
+}
+.middle {
+  flex: 2;
+  background-color: blue;
+}
+.lower {
+  flex: 2;
+  background-color: blueviolet;
+}
+.footer {
+  flex: 1;
+  text-align: center;
+  background-color: darkgray;
+}
