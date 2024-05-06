@@ -1,0 +1,52 @@
+.container {
+  background-color: cornflowerblue;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.header {
+  background-color: darkcyan;
+  text-align: center;
+  font-size: large;
+  flex: 1;
+}
+.bar {
+  flex: 6;
+  display: flex;
+  gap: 40px;
+}
+.aside {
+  background-color: green;
+  flex: 2;
+}
+.parent {
+  flex: 4;
+  background-color: chocolate;
+  display: flex;
+  flex-direction: column;
+}
+.article {
+  text-align: bottom;
+  flex: 1;
+}
+.images {
+  flex: 1;
+  display: flex;
+  margin: 20px;
+  gap: 30px;
+  justify-content: space-around;
+}
+.fimage {
+  height: 20vh;
+  width: 20vh;
+  flex: 1;
+  background-color: blueviolet;
+}
+
+.footer {
+  background-color: darkcyan;
+  text-align: center;
+  font-size: large;
+  flex: 1;
+}
