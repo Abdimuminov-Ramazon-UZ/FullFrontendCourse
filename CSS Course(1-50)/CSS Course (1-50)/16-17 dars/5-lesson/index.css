@@ -1,0 +1,47 @@
+/* h1 {
+  color: yellow; */
+  /* There Color property doesnt work because we give other value it in Internal Css and it execute first */
+  /* font-size: 64px;
+} */
+
+/* If we give values with id.Id is unique this HTML document.Id may be belongs to some tag or blocks.They are change one ID values.Id write with #id in CSS  */
+/* #id {
+  font-size: 32px;
+} */
+/* If we give two or more names in id. It doesn't work. */
+/* If we give values with class.Class may be two or more.It helps changing more similar block's CSS values.One Class's name is similar to others.May be Second name is unique.If second name is also similar.We give third name it.Names' order different.However,they are working similar  */
+/* .title {
+  font-size: 48px;
+}
+.main {
+  color: yellow;
+}
+.sub {
+  color: green;
+} */
+
+/* id and class */
+/* If we give also  id and class to one block or tag.id's value first change and importance than class.if we need to delete id level. we write keyword important between class values,then class is more important than id */
+/* #id1 {
+  color: antiquewhite;
+}
+.nav {
+  color: blue !important;
+} */
+
+/* if we gonna to give similar change different selectors. we write with comma  between them */
+/* #id1,
+.bar,
+h2 {
+  color: darkred;
+} */
+
+/* if we may give only id elements.we write through >  div elements */
+/* div > h1 {
+  color: dimgrey;
+} */
+
+/* we change all CSS values through global class * */
+*{
+    color:blueviolet
+}
