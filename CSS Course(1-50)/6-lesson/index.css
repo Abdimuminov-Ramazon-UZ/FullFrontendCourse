@@ -1,0 +1,20 @@
+/* Sixth lesson */
+/* Colors */
+/* Colors are install given elemnts four way.
+First way is rgb(red,green,blue). Every value limits from 0 to 255*/
+h1 {
+  color: rgb(240, 120, 120);
+}
+/* 
+Second way is rgba,namely red,green,blue,and alpha.Alpha gives saturation to color.It gives value from 0 to 1 .If we give 0 to alpha,block doesn't appear.we give value 1,block apppears dark*/
+h2 {
+  color: rgba(200, 100, 0, 0.5);
+}
+/* Third way is Hex.Namely,color enters through hexadecimal system.Every two number take 0 to F,first 00 is white. */
+h3 {
+  color: #00ff00;
+}
+/* Fourth way is HSL.HSL is hue,saturation,and Lightness.Hue is degree.It change 0 to 360 grade.Others enter through percent.If saturation equals 100,it is dark color.   */
+h4 {
+  color: hsl(150, 0%, 50%);
+}
