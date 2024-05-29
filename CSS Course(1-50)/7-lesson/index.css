@@ -1,0 +1,37 @@
+/* Seventh Lesson */
+/* Background */
+/* If we want to change every element's bacground we use background in  CSS.We give background color  to this tag */
+h1 {
+  background-color: brown;
+}
+/* Commonly,Background uses to fix background images block tags or all content  */
+.img {
+  /* We give images through url to background.Url may be local or internet */
+  /* If we give internet images we enter it's URL */
+  /* background-image: url("https://t3.ftcdn.net/jpg/06/59/21/20/360_F_659212096_zt9B4sqznSBkvJDTf5GZdQTTKVRI4x4Y.jpg"); */
+  /* We give local addres for image  */
+  background-image: url("./image.jpg");
+  /* If we want to see fixed images in background,we give height and width for this tag */
+  width: 400px;
+  height: 400px;
+  /* There image doesn't settle true.It is uncomfortable for users. we give cover to background- size  */
+  background-size: cover;
+  /* cover works image's size and image settles itself */
+}
+.image {
+  width: 400px;
+  height: 400px;
+  background-image: url("./image.jpg");
+  /* if image repeats given area, we give no -repeat to background - repeat.It doesn't repeat */
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* contain works given size andt image takes over all area,though it is twice or more.Given area won't be left empty space  */
+  /* We want to settle image in the center we may give center to background- position and it takes over center.Background-postion accepts top,bottom,left,and right which we want to possesion*/
+  background-position: center;
+  /* if we want to fix immutable something on background,we use background-attachment */
+  background-attachment: fixed;
+}
+/* if our code needs smart,we write background such as shorthand.however we can't write background-attachment*/
+.img2 {
+  background: #ffffff url("./image.jpg") no-repeat left top;
+}

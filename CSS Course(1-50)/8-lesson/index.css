@@ -1,0 +1,33 @@
+h1 {
+  /* we give border to elements,blocks,and containers.Border accepts different styles such as dotted,dashed, and solid*/
+  border-style: dashed;
+  border-top-style: solid;
+  /* we give width and color for appearance */
+  /* px is number monitor's points.If we write 2 px what it takes over two points.Every monitor classifies 1920x1080 or other values.If we see 1920x1080 px it means 2073600 points */
+  /* if we don't want to give border style for block's top,we may give styles border-top,left,right,bottom- styles*/
+  border-width: 2px;
+  border-color: red;
+  /* If we want to change border radius,we give value to border-radius.we may use border-radius for buttons */
+  border-radius: 4px;
+}
+button {
+  border-width: 2px;
+  border-color: blue;
+  border-radius: 4px;
+}
+/* we use shorthand such as background */
+h2 {
+  border: 2px red dashed;
+  /* we write border-radius separately */
+  border-radius: 6px;
+  /* we give percents to border-radius  */
+  /* Such as border-top,righ,left,bottom-style we give border radius. */
+  border-radius: 10px 20px;
+  /* if we give two value,first diagonal borders accept it,we give four values change every corner borders  */
+}
+.block {
+  width: 400px;
+  height: 400px;
+  border: 4px red dotted;
+  border-radius: 10px 20px 40px 80px;
+}
