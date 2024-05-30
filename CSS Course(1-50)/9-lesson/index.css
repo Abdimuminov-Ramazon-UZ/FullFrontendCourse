@@ -1,0 +1,39 @@
+/* Nineth lesson */
+/* Margin and padding */
+/* If we create some block, inner tag,and blocks in blocks,we want to settle normal or positive.we add border for block.However,Border is very near to browser blocks or out blocks' border .We add two property for change these areas.First,Margin separetes area border's outside.  */
+h1 {
+  width: 200px;
+  height: 200px;
+  border: 2px red solid;
+  margin: 40px;
+}
+/* we see differents between two tags */
+/* Texts in the tag are near tag's border.We may change padding and move away it four sides*/
+h2 {
+  width: fix-content;
+  height: 200px;
+  border: 2px red solid;
+  padding: 20px;
+}
+
+/* we give sides for margin and padding,it may gives to change choosen side's margin or padding.they are left,right,top,bottom */
+h3 {
+  width: 150px;
+  height: 150px;
+  border: 2px red solid;
+  margin-left: 40px;
+  padding-right: 20px;
+}
+/* we give one,twice,foursome values for margin and padding.If we give twice values that means left and right sides,we give foursome values that means four side such as clockwise motion*/
+
+h4 {
+  width: fix-content;
+  height: 200px;
+  border: 2px red solid;
+  margin: 20px 40px;
+  padding: 20px 40px 80px 50px;
+}
+
+/* Margin and padding uses cases */
+/* border botttom.  */
+/* We create some block's border only bottom side, it needs to separate other block or tag's content.If it is only border, it merges others.For us to separate it we give margin */
