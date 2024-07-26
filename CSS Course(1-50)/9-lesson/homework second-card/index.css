@@ -1,0 +1,31 @@
+.card {
+  width: 200px;
+  height: 180px;
+
+  border-radius: 8px;
+  background-color: black;
+}
+
+.container {
+  width: 180px;
+  height: 160px;
+  margin: 7px;
+}
+.female {
+  margin-left: 60px;
+}
+.female-png {
+  width: 75px;
+  height: 75px;
+  margin-top: 15px;
+}
+.big {
+  text-align: center;
+  font-size: 14px;
+  color: brown;
+}
+.medium {
+  font-size: 8px;
+  color: aliceblue;
+  padding-left: 7px;
+}

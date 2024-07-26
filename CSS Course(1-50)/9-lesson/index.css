@@ -35,5 +35,24 @@ h4 {
 }
 
 /* Margin and padding uses cases */
-/* border botttom.  */
-/* We create some block's border only bottom side, it needs to separate other block or tag's content.If it is only border, it merges others.For us to separate it we give margin */
+/* border botttom  */
+/* We create some block's border only bottom side, it needs to separate other block or tag's content.If it is only border, it merges others.For us to separate it we give padding. */
+
+p {
+  border-bottom: 2px solid red;
+  padding-bottom: 24px;
+}
+/* Another solve */
+/* .text{
+  border-top: 2px solid red;
+  padding-top: 24px;
+} */
+
+/* icon click */
+/* Sometime click buttons may be small or smart in the blocks.We must find useful area for click button's.If we expand button's area it is easy for users.However,this area  invisible and doesn't overflow itself block  */
+
+/* button */
+/* if we fix image or icon in button we change button elemnts' size and it may be smart */
+.main {
+  padding: 10px;
+}

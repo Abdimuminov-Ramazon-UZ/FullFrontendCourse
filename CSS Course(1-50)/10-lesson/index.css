@@ -1,0 +1,12 @@
+/* 10-lesson */
+/* Width and Height */
+/* Width - is horizontal length which block or text */
+/* Height - is vertical line which block or text */
+p {
+  /* if we give value for width, it takes over given value and not change smaller or larger size screens */
+  /* width: 40%; */
+  /* we use percents for this problem .If screen size changes,element takes over given size's 40 percent and scrollbar appears browser on the bottom */
+  min-width: 200px;
+  max-width: 400px;
+  /* width has min-width and max-width.we give  min-width  */
+}
