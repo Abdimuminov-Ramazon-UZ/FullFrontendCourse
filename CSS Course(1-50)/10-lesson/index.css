@@ -8,5 +8,23 @@ p {
   /* we use percents for this problem .If screen size changes,element takes over given size's 40 percent and scrollbar appears browser on the bottom */
   min-width: 200px;
   max-width: 400px;
-  /* width has min-width and max-width.we give  min-width  */
+  /* width has min-width and max-width.we give value to min-width.When we shorten screen elements adapt up to given value,then blocks or elemnts not change.if we give max-width and our screen is short from given value. we enlarge screen size elemnts or blocks enlarge up to given value then its not change.  */
+  margin: 5px;
+  min-height: 50px;
+  max-height: 100px;
+  /* the same max and min width also min and max height change screen size between given values.but if our information size is larger or smaller min or max height,its don't work true*/
+}
+
+.main {
+  border: 5px red solid;
+  width: 400px;
+}
+
+.container {
+  border: 5px blue solid;
+  /* width: inherit; */
+  width: calc(inherit-200px);
+  /* if we create two blocks which each block settles others into and give value for width then inside block's width value equal inherit,every blocks width value are the same.Inherit  is take value  parent block's value */
+  /* if we use calc() function we change values through function  */
+  /* if we value initial  */
 }
