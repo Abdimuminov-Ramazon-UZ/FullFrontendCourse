@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.nav {
+  background-color: black;
+  color: bisque;
+  width: 100%;
+  display: flex;
+}
+
+h1,
+.terms,
+.connect {
+  padding-left: 30px;
+}
+
+.terms {
+  display: flex;
+  margin-left: 30px;
+}
+h3 {
+  margin: 10px;
+}
+h1 {
+  width: 70%;
+  margin-left: 40%;
+}
+.connect {
+  margin-right: 30px;
+  background-color: rgb(12, 172, 172);
+  padding: 10px 20px;
+  border-radius: 25px;
+}
