@@ -1,0 +1,22 @@
+/* 12-lesson */
+/* Outline */
+/* outline is border of input and buttons */
+/* 
+outline has several properties*/
+input {
+  margin: 100px;
+  border: blue 2px dashed;
+  /* If we invert value for outline,it disappears first times and we click input it appears ont the screen.We give auto for outline it  occasionally appears  */
+  outline: invert;
+  /* if we give value outline-widh change between border and outline size */
+  outline-width: 5%;
+  /* we may change outline color and style also border */
+  outline-color: red;
+  /* outline-offset changes size between outline and border */
+  outline-offset: 10px;
+}
+
+img {
+  width: 40%;
+  height: 40%;
+}
