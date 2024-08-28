@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Form and Inputs -->
+    <!-- Form has several  property that are action and target -->
+    <!-- if we _blank for target, window opened new window-->
+    <!-- form methods are get(for get data from server),post(post or create new data),put(for update),delete(removing data) and patch(nowadays it doesn't work) -->
+    <!-- we may write input dates -->
+    <!-- <form action="" method=""></form> -->
+
+    <form action="">
+      <fieldset>
+        <legend>test</legend>
+        <!-- input uses for enter data.Input types :
+        type=button input changes button.
+        type=checkbox input changes checkbox
+        others under-->
+        <input type="text" />
+        <!-- we give default value or name for input elements -->
+        <input type="button" value="save" />
+        <!-- if we want to choose element we create several or once checkbox -->
+        <!-- we create label to chechkbox -->
+        <label for="box">box</label>
+        <input type="checkbox" value="red" />
+
+        <!-- if we dunno how work input, we write placeholder for help -->
+        <input type="number" value="+998" placeholder="write your number" />
+        <!-- if we give radio for type and enter name attribute we choose only radio -->
+        <input name="radio" type="radio" />
+        <input name="radio" type="radio" />
+        <!-- we change color some elements we need to create type equal to color -->
+        <input type="color" />
+        <!-- if we choose date we give date for type -->
+        <input type="date" />
+        <!-- Submit uses to send data to backend -->
+        <!-- <input type="email" required value="submit" /> -->
+        <input type="submit" />
+        <!-- we want to download file, we give file for type -->
+        <input type="file" />
+        <!-- we want to hidden input , we give hidden for type -->
+        <input type="hidden" />
+        <!-- if we want to enter password,we give password for type -->
+        <input type="password" />
+        <!-- we may enter range for some element -->
+        <input type="range" min="100" max="1000" />
+        <input type="submit" />
+        <!-- we may reset some elements and it uses for come back first window -->
+        <input type="reset" />
+        <!-- search is find important element  -->
+        <input type="search" />
+        <!-- we create simple clock -->
+        <input type="time" />
+        <!-- we enter url -->
+        <input type="url" />
+        <!-- autocomplete is return and remind which we used old emails  -->
+        <input type="email" autocomplete="given-name" name="email" />
+        <input type="submit" />
+        <!-- if we want to write more data we create textarea. it give id, cols, maxlength,rows for limit data -->
+        <textarea
+          name="text"
+          id="5"
+          cols="30"
+          maxlength="25"
+          rows="10"
+        ></textarea>
+
+        <!-- select is choose element which we use several the same as others -->
+        <select name="" id="">
+          <option value="">ENG</option>
+          <option value="">RU</option>
+          <option selected value="">Uz</option>
+          <!-- if we don't write value select doesn't work,for enter default value we write selected  -->
+        </select>
+        <!-- if we remind for users old data in the input we create datalist -->
+        <h1>datalist</h1>
+        <input list="name" type="text" />
+        <datalist id="name">
+          <option value="english"></option>
+        </datalist>
+        <!-- if we create form card we create fieledset ,we write legend for enter fieldset's name-->
+      </fieldset>
+    </form>
+  </body>
+</html>
