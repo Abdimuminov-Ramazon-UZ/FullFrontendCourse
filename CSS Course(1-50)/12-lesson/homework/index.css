@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: gray;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 40px;
+}
+section {
+  background: #fff;
+  width: 350px;
+  height: 400px;
+  padding: 20px;
+}
+
+section header {
+  color: rgb(185, 185, 9);
+  font-weight: bolder;
+  font-size: small;
+  margin: 3px 0;
+}
+section input {
+  margin: 5px 0;
+  width: 100%;
+  height: 25px;
+}
+.num {
+  display: flex;
+  column-gap: 5px;
+}
+.date,
+.gender {
+  flex: 1;
+}
+.b {
+  display: flex;
+  column-gap: 3px;
+}
+
+.card {
+  display: flex;
+  column-gap: 3px;
+}
+.cvc {
+  display: flex;
+  column-gap: 3px;
+}
+
+.n {
+  outline-offset: 20px;
+  outline-width: 45px;
+}
+.s,
+.c {
+  flex: 2;
+}
+.end {
+  display: flex;
+}
+.end input {
+  flex: 5;
+  margin: 5px;
+}
+.end p {
+  margin-top: 10px;
+  font-size: xx-small;
+}
