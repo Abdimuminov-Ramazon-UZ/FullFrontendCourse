@@ -1,0 +1,35 @@
+div {
+  width: 100px;
+  height: 20px;
+  bottom: 1px solid blue;
+}
+.container {
+  width: 80%;
+  height: 200px;
+  border: 2px blue dotted;
+}
+.vw,
+.foiz {
+  margin: 10px;
+  border: 1px red dashed;
+}
+.foiz {
+  width: 50%;
+}
+.vw {
+  width: 50vw;
+}
+.vh {
+  height: 50vh;
+  /*There container settles out parent content */
+  /* border: 2px red solid; */
+}
+.px {
+  font-size: 16px;
+}
+.em {
+  font-size: 1em;
+}
+.rem {
+  font-size: 1rem;
+}

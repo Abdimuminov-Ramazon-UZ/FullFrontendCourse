@@ -1,0 +1,61 @@
+* {
+  /* we need to equals to zero default padding and margin values in the beginning  */
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  border: 2px red solid;
+  /* height: 50px; */
+  margin: 50px;
+  text-align: justify;
+  text-align-last: center;
+}
+h1 {
+  width: fit-content;
+  /* if we give fit-content to width,text align takes default parametres which it is inherit and it inheritances */
+}
+/* if we give justify to text-align,it settles all texts in the box or in the container like books.we give justify spaces on the text more than first screen for settles left and right sides equally.If Texts on the last raw doesn't settle normal we give text align last only last raw and we may change it's appeareance.we give several properties for one class programm give only last property */
+.reverse {
+  margin: 50px;
+  border: 2px blue dashed;
+  text-align: left;
+  text-align-last: center;
+}
+.reverse p {
+  direction: rtl;
+  /* rtl is abbrevation right to left */
+  unicode-bidi: bidi-override;
+  /* unicode bidi helbs direction */
+}
+span {
+  font-size: 10px;
+  vertical-align: sub;
+}
+.line a {
+  /* text-decoration has several proporties.they are thickness,color, and lines */
+  text-decoration: line-through 5px red;
+  /* we change text's letters to capitalize,lowercase,unset and initial */
+  text-transform: capitalize;
+}
+.spacing {
+  margin: 50px;
+  border: 2px green solid;
+}
+.spacing p {
+  /* we give unit to text-indent it change paragraph size  */
+  text-indent: 50px;
+  /* if we give size to letter spacing it changes spaces betwwen letters' size */
+  letter-spacing: 5px;
+  /* if we give size to word spacing it changes spaces between words' size */
+  word-spacing: 10px;
+  /* we may change sizes between raws' size */
+  /* line-height: 5px; */
+  /* if we give nowrap to white-space  words don't get down second raw its settle only first raw */
+  /* white-space: pre; */
+}
+
+.shadow {
+  /* we give to minus and plus values to text shadows it moves bottom(minus) and top(plus).We give third size for blur.Blur distributes color like radius.we give several colors. it changes colors which given radius */
+  text-shadow: 2px -2px 8px red, 0px 0px 16px yellowgreen;
+}
