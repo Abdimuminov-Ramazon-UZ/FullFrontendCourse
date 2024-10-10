@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Qwitcher+Grypen:wght@400;700&display=swap");
+/* If we work original project and we install fons in the CSS our fonts work only given files */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  /* HTML has safe font-families.We give two or more fonts because if first font doesn't work program passes second. If second font doesn't work program passes third and etc.Usually last fonts are default fonts.They are named web-safe fonts */
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* We may change thickness by font-size. */
+  font-size: italic;
+}
+
+p {
+  font-family: "Edu AU VIC WA NT Guides", Courier, monospace;
+  /* font weight is changed thickness.However, it is different  500 value between 600 value */
+  font-weight: 500;
+}
+
+pre {
+  font-family: "Qwitcher Grypen";
+  /* font-variant give possible writing upper case which is word's first letter */
+  font-variant: small-caps;
+}

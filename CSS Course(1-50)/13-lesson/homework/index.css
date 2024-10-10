@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+div {
+  border: 2px red solid;
+}
+.container {
+  margin: 50px;
+  padding: 10px;
+  height: 400px;
+  display: flex;
+}
+
+.project {
+  margin: 2px;
+  width: 90vw;
+}
+
+.text {
+  text-align: center;
+  padding: 5px;
+}
+
+.elements {
+  border: 2px black solid;
+  margin: 2px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.t,
+.m,
+.b {
+  flex: 1;
+  display: flex;
+  gap: 5px;
+  margin: 5px;
+}
+.tl,
+.tc,
+.tr,
+.ml,
+.mc,
+.mr,
+.bc,
+.bl,
+.br {
+  flex: 1;
+}
+
+.tc {
+  text-align: center;
+}
+.tr {
+  text-align: right;
+}
+.ml {
+  display: flex;
+}
+.ml
+  div; /* border: 2px blue solid; */
+  /* flex: 1; */
+
+/* .mc p {
+  padding-top: 40%;
+  text-align: center;
+}
+.mr p {
+  padding-top: 40%;
+  text-align: right;
+} */
