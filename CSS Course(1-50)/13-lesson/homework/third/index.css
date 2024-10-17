@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  height: 100vh;
+  margin: 10px;
+
+  /* border: 2px red solid; */
+}
+.first-row {
+  /* border: 2px blue solid; */
+  margin: 25px;
+  text-align: center;
+  font-size: 45px;
+  font-weight: lighter;
+}
+.sec-rows {
+  /* border: 2px green solid; */
+  margin: 25px;
+  display: flex;
+  padding: 0 10px;
+}
+.f {
+  flex: 1;
+  /* border: 2px darkblue solid; */
+
+  padding: 25px;
+}
+.f p {
+  /* border: 2px red solid; */
+  margin: 150px 0;
+  text-align: center;
+}
+.f button {
+  width: 100px;
+  text-align: center;
+  background: rgb(151, 43, 128);
+  border-radius: 5px;
+  padding: 15px;
+  margin: 0 75px;
+}
+.s {
+  flex: 1;
+  /* border: 2px darkblue solid; */
+
+  padding: 25px;
+}
+.t {
+  flex: 1;
+  /* border: 2px darkblue solid; */
+
+  padding: 25px;
+}
+
+.s p {
+ 
+  margin: 130px 0;
+  text-align: center;
+}
+.t p {
+  
+  margin: 145px 0;
+  text-align: center;
+}
+.s button {
+  width: 100px;
+  text-align: center;
+  background: rgb(151, 43, 128);
+  border-radius: 5px;
+  padding: 15px;
+  margin: 0 75px;
+}
+.t button {
+  width: 100px;
+  text-align: center;
+  background: rgb(151, 43, 128);
+  border-radius: 5px;
+  padding: 15px;
+  margin: 0 75px;
+}

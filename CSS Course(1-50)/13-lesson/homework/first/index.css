@@ -2,9 +2,7 @@
   margin: 0;
   padding: 0;
 }
-div {
-  border: 2px red solid;
-}
+
 .container {
   margin: 50px;
   padding: 10px;
@@ -49,6 +47,8 @@ div {
 .bl,
 .br {
   flex: 1;
+  border: 2px black solid;
+  padding: 5px;
 }
 
 .tc {
@@ -59,16 +59,32 @@ div {
 }
 .ml {
   display: flex;
+  align-items: center;
+  justify-content: left;
 }
-.ml
-  div; /* border: 2px blue solid; */
-  /* flex: 1; */
 
-/* .mc p {
-  padding-top: 40%;
-  text-align: center;
+.mc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.mr p {
-  padding-top: 40%;
-  text-align: right;
-} */
+.mr {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.bl {
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+}
+.bc {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.br {
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+}
