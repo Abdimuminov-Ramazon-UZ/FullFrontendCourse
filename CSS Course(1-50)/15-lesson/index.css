@@ -7,3 +7,24 @@
   text-align: center;
   font: 18px;
 }
+.info {
+  /* padding-left: 50%; */
+  font-size: 12px;
+  text-align: center;
+  margin: 10px 0 30px 0;
+}
+
+.info img {
+  border-radius: 50px;
+}
+.names {
+  background-color: rgb(84, 84, 211);
+  color: white;
+  padding: 40px 100px;
+  display: flex;
+}
+span {
+  width: 100%;
+
+  text-align: center;
+}
