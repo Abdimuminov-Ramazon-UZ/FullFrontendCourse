@@ -1,0 +1,13 @@
+body {
+  margin: 20px;
+}
+
+ul {
+  list-style-type: circle;
+}
+/** We give images instead of marks.we change mark's position.We use shorthand instead of all of them***/
+li {
+  list-style-position: inside;
+  list-style-image: url(./icon2.jfif);
+  /* list-style: disc outside; */
+}

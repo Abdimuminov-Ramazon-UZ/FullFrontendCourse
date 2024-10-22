@@ -1,11 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <!--13-lesson--->
+    <!---Lists--->
+    <!--Lists used for order data.It has two type unordered and ordered list.Ordered list gives numbers elements.Unordered list gives only some marks.Third type list is descripton list.However,It doesn't used.-->
+    <h1>Lists</h1>
+    <!--We may change lists marks.In unordered lists mark's type are square,disc,none, and circle.In ordered lists mark's type are numbers,grek upper letters,grek lower letters,lower and upper roman numerals.
+We need to give type attribute to lists-->
+    <ul type="square">
+      <li>
+        <h2>Orange</h2>
+      </li>
+      <li>
+        <h2>Apple</h2>
+      </li>
+      <li>
+        <h2>Mango</h2>
+      </li>
+    </ul>
+    <ol type="i">
+      <li>Iphone</li>
+      <li>Samsung</li>
+      <li>Lenovo</li>
+    </ol>
+    <!--If we give none to type.Lists hasn't marks.We may use any changes by css or style tags.we write list-style-type and write any designs in the it -->
+    <!--  <style>
+    ol{
+      list-style-type:lower-alpha;
+    }
+  </style>-->
+    <!--Nested lists create through several lists.we write list instead of parent list's item-->
+    <ol>
+      <li>Paper</li>
+      <li>Book</li>
+      <ol>
+        <li>Laptop</li>
+        <li>Phone</li>
+      </ol>
+    </ol>
+    <!--
+  Description lists use when item needs description.It hasn't marks.-->
+    <dl>
+      <dt>Pen</dt>
+      <dd>It is cheap</dd>
+      <dt>Cup</dt>
+      <dd>It is expensive</dd>
+    </dl>
+
+    <!-- Homework-->
+
+    <h1>List Example</h1>
+    <ol>
+      <li>
+        List Item 1
+        <ol>
+          <li>Nested Item 1.1</li>
+          <li>Nested Item 1.2</li>
+        </ol>
+      </li>
+      <li>
+        List Item 2
+        <ol type="i">
+          <li>Nested Item 2.1</li>
+          <li>
+            Nested Item 2.2
+            <ul type="disc">
+              <li>Nested Item 2.2.1</li>
+              <li>
+                Nested Item 2.2.2
+                <ul type="circle">
+                  <li>Nested Item 2.2.2.1</li>
+                  <li>Nested Item 2.2.2.2</li>
+                </ul>
+              </li>
+              <li>Nested Item 2.2.3</li>
+            </ul>
+          </li>
+          <li>Nested Item 2.3</li>
+        </ol>
+      </li>
+      <li>
+        Nested Item 3
+        <ul type="square">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>item 3</li>
+        </ul>
+      </li>
+    </ol>
+  </body>
 </html>
