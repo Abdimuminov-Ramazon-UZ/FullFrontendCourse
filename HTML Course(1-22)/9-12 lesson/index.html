@@ -228,7 +228,148 @@
 
     <!--Colgroup is used to choice table row.It is through col tag to choice table's row.then we change styles rows.If we want to choice only second or third tag we write one in the first col after we write second col tag and wo enter 2 -->
 
-
+  <!--12-lesson-->
+  <!--- Tables-->
+  <!--Table consist on rows and columns.Row is line of horizontal.Column is line of vertical.One of box is named cell.Tables create by th,tr,td and table tags.When we give value to border attribute then appears border.-->
+  
+  <!-- <table border="1" >--->
+    <!--th is table header.It possesiones center and change italic type which given datas-->
+  <!--  <tr>
+      <td></td>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+      <th>Sunday</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    
+  </table>-->
+  <!--If tables border seatles double border in the table,we give collapse to border-collapse style and change only border-->
+ <!--- <style>
+    table{width: 100%;
+    border: 2px;
+      border-collapse: collapse;
+    }
+    table td{
+      width:10px;
+    }
+  </style>-->
+  <!-- If one cell hogs two or more cells position, we use colspan and rowspan.
+  That is it for are emty or delete,herein important element occupies places.Colspan uses for horizontal cells.Rowspan uses for vertical cells -->
+  
+  <table border="2">
+ 
+    <tr>
+      <th colspan="5">2022</tb>
+      
+    </tr>
+       <tr>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+       </tr>
+          <tr>
+            
+            <th colspan="3" rowspan="2">Festival</th>
+            <td></td>
+            <td></td>
+          </tr>
+             <tr>
+               
+               <td></td>
+               <td></td>
+             </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+  </table>
+  <style >
+    table{
+      width:50%;
+      border: 2px;
+      border-collapse: collapse;
+    }
+  </style>
+  <!--Colgroup helps to choose columns.
+  It is independent tag which is write under table.It has col tag. If we want to choose middle columns we give double col and it brings given column-->
+  <table border="1">
+    <colgroup>
+      <col span="1">
+      <col span="1" style="background-color:blue;">
+    </colgroup>
+    <tr>
+      <td>Samsung</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Iphone</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Oppo</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+  <style>
+    table{
+      border-collapse:collapse;
+    }
+  </style>
    
   </body>
 </html>
