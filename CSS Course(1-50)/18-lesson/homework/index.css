@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 200px;
+  height: 400px;
+  border-radius: 15px;
+  background-color: rgb(68, 59, 21);
+  color: white;
+  padding: 20px;
+  margin: 20px;
+  font-size: large;
+}
+.name {
+  display: flex;
+}
+.name p {
+  width: 80%;
+  margin-left: 15px;
+}
+.ex {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.dash,
+.error,
+.search,
+.set,
+.not {
+  display: flex;
+  margin: 15px 0;
+}
+.dash p {
+  width: 80%;
+  padding-left: 15px;
+}
+.dash p {
+  width: 80%;
+  padding-left: 15px;
+}
+.set p {
+  width: 80%;
+  padding-left: 15px;
+}
+.error p {
+  width: 80%;
+  padding-left: 15px;
+}
+.search p {
+  width: 80%;
+  padding-left: 15px;
+}
+.not p {
+  width: 80%;
+  padding-left: 15px;
+}
+
+.bar {
+  width: 50px;
+  height: 400px;
+  border: 2px red solid;
+  background-color: rgb(68, 59, 21);
+  color: white;
+  padding: 20px;
+  margin: 20px;
+  font-size: 24px;
+  border-radius: 15px;
+}
+.n,
+.s,
+.c,
+.w,
+.b,
+.e,
+.t,
+.d {
+  margin: 10px;
+}
+.t {
+  margin-left: 15px;
+}
