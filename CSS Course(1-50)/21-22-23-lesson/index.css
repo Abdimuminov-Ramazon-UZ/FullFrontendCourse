@@ -1,0 +1,44 @@
+/* div {
+  border: 2px red solid;
+  margin: 15px;
+} */
+/* When we create elements in the html,Default display value is block.If we change inline display's value.This element doesn't  take  width and height.It limits only themselves element's size.We give none elements don't appeared.Block takes width and height also inline-block.when we don't give width block possesiones 100 procent of display's.Inline-block possesioned also inline. */
+.none {
+  display: none;
+}
+.inline {
+  display: inline;
+  width: 200px;
+  height: 100px;
+}
+.block {
+  display: block;
+  /* width: 200px; */
+  height: 100px;
+}
+.inline-block {
+  display: inline-block;
+  /* width: 200px; */
+  height: 100px;
+}
+/* float possesioned photos and images in the texts. It possesioned as part of text.we give center,right,left and others. float isn't important.instead of float we use display flex because we will run out diversity  and problems  in the future */
+.float img {
+  float: right;
+  margin: 10px;
+}
+/* We use overflow when elements over themselves parents.it has hidden,scroll,visible and auto.default value is visible.If we give auto to overflow,scroll appeared it's block .we usually use overflow for tables */
+.over {
+  border: 2px red solid;
+  width: 200px;
+  height: 400px;
+  overflow: auto;
+  /* if we want to scroll  asross x axis we give nowrap to white space*/
+  /* white-space: nowrap; */
+}
+.firsy,
+.second {
+    /* If elements more and we don't write white space to parent scroll get alse x axis and y axis */
+  width: 200px;
+  height: auto;
+  border: 2px blue solid;
+}
