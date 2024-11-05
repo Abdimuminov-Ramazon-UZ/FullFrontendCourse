@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 10px;
+}
+header {
+  font-size: 32px;
+  font-weight: 600;
+  padding: 10px;
+}
+main {
+  margin: 10px;
+}
+.first {
+  display: flex;
+  gap: 15px;
+}
+.video {
+  flex: 2;
+}
+.desc {
+  flex: 4;
+}
+.desc p {
+  margin-top: 25px;
+}
+.desc pre {
+  margin-top: 10px;
+}
+.follow {
+  flex: 1;
+}
+.follow h1 {
+  margin-bottom: 10px;
+}
+hr{
+    margin: 15px;
+}
