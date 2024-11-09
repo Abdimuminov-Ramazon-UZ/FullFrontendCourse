@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 17-lesson -->
+    <!-- Use javascript -->
+    <!-- We use Javascript when we act HTML and Css files.Js may write with script tag and separately file. We connect HTML and JS through script's src attribute that we give location to src.we use console.log when we want print information on the console.All things are insede JS document object model.we choose elements by id or class name and we write document.queryselector
+    we use onclick for if click .onmousemove is defined x,y coordinates' mouse -->
+    <h1>Javascript</h1>
+    <button onclick="test()">click</button>
+    <div onmousemove="move(event)"></div>
+    <script>
+      function test() {
+        console.log("clicked");
+        document.querySelector("h1").style.background = "red";
+      }
+      function move(event) {
+        console.log(event.x, event.y);
+        document.querySelector(
+          "h1"
+        ).style.background = `rgb(${event.y},${event.x},0)`;
+      }
+      console.log(document);
+      document.title = "Jdu";
+    </script>
+  </body>
+</html>
