@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 22-lesson -->
+    <!-- Canvas -->
+    <!-- Canvas is used to draw graphics in JS. -->
+    <!-- line methods -->
+    <!-- We use canvas tag then we write scripts in it.We choose it and give gentcontext method and give it 2d.canvas use Js methods -->
+    <canvas width="200" height="200" style="border: 2px red solid"></canvas>
+  </body>
+  <script>
+    //circle
+    canvas = document.querySelector("canvas").getContext("2d");
+    //   canvas.moveTo(50, 50);
+    //   canvas.lineTo(0, 0);
+
+    //circle
+    //arc(x-center,y-center,radius,border thickness,arc-numbers or circle length by pi) if we give to number to fifth property it means arc numbers
+    // canvas.arc(100, 100, 50, 2, 5);
+    canvas.font = "30px San serif";
+    canvas.fillText("webbrain", 50, 50);
+    // When we want to write texts in some case,we may use filltext too above event
+    canvas.stroke();
+  </script>
+</html>
