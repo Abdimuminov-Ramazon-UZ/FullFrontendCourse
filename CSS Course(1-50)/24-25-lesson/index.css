@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+tr {
+  border: 2px solid red;
+  margin: 5px;
+  padding: 10px;
+}
+tr,
+td {
+  border: 1px red solid;
+}
+table {
+  border-collapse: collapse;
+}
+.flex {
+  display: flex;
+}
