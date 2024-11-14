@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  height: 400px;
+  margin: 50px;
+  border: 2px red solid;
+  display: flex;
+}
+/* Position's default parametr is static */
+.main1,
+.main2 {
+  border: 2px solid blue;
+  flex: 1;
+  margin: 20px;
+  position: relative;
+}
+img {
+  position: absolute;
+  /* When we use position then top,bottom,right and left.We may give minus values to top etc.. and it works itself  reverse property*/
+  /* top: -100px;
+  right: 250px; */
+  /* When we use absolute block get body's border.we give position relative to parent and block gets parent's border.though position is comprehensive however position is unsafe.we create other elements between block we may lose its.  */
+  top: 0;
+  border: 2px red solid;
+}
+
+.sms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border: 1px red solid;
+  border-radius: 50%;
+  background-color: blue;
+  color: aliceblue;
+  font-size: 32px;
+  font-weight: bold;
+  position: fixed;
+  /* We give fixed to position this block doesn't move anywhere while we are scrolling display*/
+  bottom: 100px;
+  right: 100px;
+  /* z-index is ordered given fixed blocks */
+  z-index: 1;
+}
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(0, 255, 242);
+  display: flex;
+  color: rgb(9, 24, 37);
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 24px;
+  position: sticky;
+  /* When we give sticky to position and it gaves top and bottom range block stop scrolling given ranges in betwwen.z-index equals to 999 in the some cases.However,first block remains under second block in order.which goes last that has on others.*/
+  top: 20px;
+  bottom: 100px;
+}
+.front,
+.back,
+.mob,
+.des {
+  margin: 20px;
+}
