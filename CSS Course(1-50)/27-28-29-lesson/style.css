@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.icon {
+  width: fit-content;
+  border: 2px red solid;
+  border-radius: 5px;
+  margin: 100px;
+}
+.icon i {
+  color: green;
+  padding: 5px;
+}
+.icon input {
+  outline: none;
+  border: none;
+}
+.input {
+  width: fit-content;
+  margin: 50px;
+  border: 2px red solid;
+  font-size: 32px;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  position: relative;
+}
+.input input {
+  height: 44px;
+  padding-left: 45px;
+  border: none;
+  outline: none;
+}
+.input i {
+  color: green;
+  position: absolute;
+  top: 1%;
+  right: 0;
+  border: 1px green solid;
+  border-radius: 2px;
+  margin:5px;
+  padding: 5px;
+}
+/* .main {
+  height: 600px;
+  width: 800px;
+  border: 2px red solid;
+  margin: 50px;
+} */
+
+/* .main h1 {
+  color: blue;
+} */
+/*When we use descendent it means all inner elements and blocks*/
+
+/* .main > h1 {
+  color: purple;
+} */
+/*When we write > it means grandchild as it were childrens' child*/
+/* .main + h1 {
+  color: yellow;
+} */
+/*When we write + it means next to block whatever  elements */
+/* .main ~ h2 {
+  color: greenyellow;
+} */
+/*When we write ~ it means next to general sibling or whatever  elements */
