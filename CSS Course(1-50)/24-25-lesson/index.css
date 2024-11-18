@@ -2,19 +2,33 @@
   margin: 0;
   padding: 0;
 }
-
-tr {
-  border: 2px solid red;
-  margin: 5px;
-  padding: 10px;
-}
-tr,
-td {
-  border: 1px red solid;
+.main {
+  width: 1000px;
+  overflow-x: scroll;
+  white-space: nowrap;
+  /* overflow-y: scroll; */
 }
 table {
+  width: 1500px;
   border-collapse: collapse;
+}
+tr,
+td,
+th {
+  padding: 10px;
+  /* border: 2px red solid; */
 }
 .flex {
   display: flex;
+  gap: 10px;
+  padding: 15px;
+}
+td button {
+  background-color: purple;
+  text-align: center;
+  color: #fff;
+  width: 124px;
+  height: 40px;
+  border-radius: 5px;
+  margin-left: 250px;
 }

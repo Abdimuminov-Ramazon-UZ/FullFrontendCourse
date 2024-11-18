@@ -33,11 +33,12 @@
   height: 400px;
   overflow: auto;
   /* if we want to scroll  asross x axis we give nowrap to white space*/
+  /* if we want to scroll y axis we give scroll to overflow-y  */
   /* white-space: nowrap; */
 }
 .firsy,
 .second {
-    /* If elements more and we don't write white space to parent scroll get alse x axis and y axis */
+  /* If elements more and we don't write white space to parent scroll get alse x axis and y axis */
   width: 200px;
   height: auto;
   border: 2px blue solid;
