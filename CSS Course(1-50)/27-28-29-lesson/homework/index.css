@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.e-mail,
+.password,
+.c-password,
+.mail,
+.b-mail {
+  width: fit-content;
+  margin: 10px 10px;
+  border: 2px black solid;
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+.mail {
+  border-color: blue;
+  color: blue;
+}
+.b-mail {
+  background-color: blue;
+  border-color: blue;
+}
+.b-mail i {
+  color: #fff;
+}
+.mail input {
+  border: none;
+  outline: none;
+  margin-left: 5px;
+}
+.e-mail input {
+  border: none;
+  outline: none;
+  margin-left: 5px;
+}
+.b-mail input {
+  border: none;
+  outline: none;
+  margin-left: 5px;
+}
+.password input {
+  border: none;
+  outline: none;
+  margin-left: 5px;
+}
+.c-password input {
+  border: none;
+  outline: none;
+  margin-left: 5px;
+}
+.e-mail i {
+  border-right: 1px black solid;
+  padding-right: 5px;
+}
+.password i {
+  border-right: 1px black solid;
+  padding-right: 5px;
+}
+.c-password i {
+  border-right: 1px black solid;
+  padding-right: 5px;
+}
+
+.y-button {
+  width: fit-content;
+  padding: 5px 10px;
+  margin: 10px;
+  background-color: rgb(194, 194, 7);
+  text-align: center;
+  border-radius: 5px;
+}
+.b-button {
+  width: fit-content;
+  padding: 5px 10px;
+  margin: 10px;
+  background-color: rgb(3, 138, 81);
+  text-align: center;
+  border-radius: 5px;
+}
+.p-button {
+  width: fit-content;
+  padding: 5px 10px;
+  margin: 10px;
+  background-color: rgb(117, 33, 117);
+  text-align: center;
+  border-radius: 5px;
+}
+.r-button {
+  width: fit-content;
+  padding: 5px 10px;
+  margin: 10px;
+  background-color: rgb(194, 7, 32);
+  text-align: center;
+  border-radius: 5px;
+}
+.s-b {
+  background-color: green;
+  width: fit-content;
+  margin: 10px;
+  padding: 5px 15px 5px 10px;
+  border-radius: 5px;
+  /* text-align: center; */
+}
+.s-b i {
+  border-right: 1px black solid;
+  padding-right: 5px;
+}
+.w-b {
+  width: fit-content;
+  background-color: rgb(54, 126, 54);
+  margin: 10px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+}
+.w-b i {
+  border-right: 1px black solid;
+  padding-right: 5px;
+}
+.b-b,
+.t-b {
+  width: fit-content;
+  background-color: rgb(121, 126, 54);
+  margin: 10px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+}
+.b-b i {
+  border-right: 1px black solid;
+  padding-right: 5px;
+}
+.t-b i {
+  border-right: 1px black solid;
+  padding-right: 5px;
+}
+.rw-b,
+.rt-b,
+.rr-b,
+.rl-b {
+  width: fit-content;
+  padding: 5px 10px 5px;
+  background-color: rgb(45, 45, 226);
+  border-radius: 5px;
+  margin: 10px;
+}
+.rw-b i {
+  border-left: 2px black solid;
+  padding: 5px;
+}
+.rt-b i {
+  border-left: 2px black solid;
+  padding: 5px;
+}
+.rl-b i {
+  border-left: 2px black solid;
+  padding: 5px;
+}
+.rr-b i {
+  border-left: 2px black solid;
+  padding: 5px;
+}

@@ -1,0 +1,40 @@
+body {
+  margin: 20px;
+}
+a {
+  margin: 50px;
+}
+/*when we do visited up link we may change visited sites' style*/
+a:visited {
+  color: yellowgreen;
+}
+/*when we do link up link tag and we may change whatever link's style.*/
+a:link {
+  color: #000;
+}
+/*we do hover up link we see changing styles when we click on it by mouse*/
+a:hover {
+  color: red;
+}
+/*we may attach unvisited an others however main link tags are its*/
+input:disabled {
+  color: red;
+}
+/*If we do disabled up input we don't write in it and we need to add disabled in input's tag even don't show cursor.Usually,every input's  Default value is enabled*/
+input,
+button {
+  margin: 50px;
+}
+input:checked {
+  width: 100px;
+}
+/*we do checked up input checkbox we may change small styles which we change only width and it moves.checkbox styles are difficult as range*/
+button:focus {
+  opacity: 0.3;
+  background-color: green;
+  color: darkred;
+}
+/*when we do focus up button we may change styles after we click it*/
+input:range {
+  width: 100px;
+}
