@@ -1,0 +1,97 @@
+body {
+  margin: 20px;
+  /* display: flex; */
+}
+a {
+  margin: 50px;
+}
+/*when we do visited up link we may change visited sites' style*/
+a:visited {
+  color: yellowgreen;
+}
+/*when we do link up link tag and we may change whatever link's style.*/
+a:link {
+  color: #000;
+}
+/*we do hover up link we see changing styles when we click on it by mouse*/
+a:hover {
+  color: red;
+}
+/*we may attach unvisited an others however main link tags are its*/
+/* input:disabled {
+  color: red;
+} */
+/*If we do disabled up input we don't write in it and we need to add disabled in input's tag even don't show cursor.Usually,every input's  Default value is enabled*/
+input,
+button {
+  margin: 50px;
+}
+/* input:checked {
+  width: 100px;
+} */
+/*we do checked up input checkbox we may change small styles which we change only width and it moves.checkbox styles are difficult as range*/
+/* button:focus {
+  opacity: 0.3;
+  background-color: green;
+  color: darkred;
+} */
+/*when we do focus up button we may change styles after we click it*/
+/* input:in-range {
+  width: 100px;
+} */
+/* we change range input's range */
+/* input:invalid {
+  border: 2px red solid;
+} */
+/* Invalid give property input's type. If we enter other type datas in the input then input change given styles */
+/* input:valid {
+  border: 2px green dashed;
+} */
+/* input:optional {
+  border: red solid 2px;
+} */
+
+div {
+  width: 100px;
+  height: 100px;
+  border: 2px green solid;
+  margin: 50px 10px;
+}
+
+div:empty {
+  border: red solid 2px;
+}
+/* we choose empty div block among the rest */
+table {
+  border-collapse: collapse;
+}
+th,
+/* we used to not() when we wanto separate one or more elements from others */
+td:not(.id) {
+  border: 1px black solid;
+  color: red;
+}
+/* td:first-child {
+  color: red;
+} */
+/* We choose first table datas  through others*/
+/* td:last-child {
+  color: yellow;
+} */
+/*  We choose last table datas  through others */
+/* td:nth-child(2) {
+  color: blue;
+} */
+/*  We choose optative table datas  through others and we enter td's order in the bracket*/
+/* We use odd and even when we want to give nth-child's value */
+/* :root {
+  --color: blue;
+}
+th {
+  color: var(--color);
+} */
+/* We create varible through root and it gives convenient work for variables.we give variables through var() */
+/* if we give value root without two hypens it changes style body */
+:target {
+  color: coral;
+}
