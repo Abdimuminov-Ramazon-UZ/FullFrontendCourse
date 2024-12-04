@@ -1,0 +1,36 @@
+h1 {
+  color: rgb(26, 9, 9);
+}
+
+/* We choose elements through every attribute the same as title,placeholder,class and others*/
+/* [title]{
+  color:blue;
+} */
+
+/*we choose elements through attribute's value ,However we use backtick before equal symbol  */
+
+/* h1[title~="web"]{
+  color:green;
+} */
+/*  | is worked only given full name*/
+/* h1[title|="devwebbrain"]
+{
+  color:purple;
+} */
+/* when we write first given names and we used to its for ^.It doesn't separate labels.  */
+/* h1[title^="web"]{
+  color:aliceblue;
+} */
+/* if we write title$=webbrain and there enters last compound as we give title$=brain element style changes */
+/* h1[title$="brain"]
+{
+  color:rgb(78, 72, 70);
+} */
+/* ^ is selected first compounds.Against it $ is selected last compound */
+/* we give title*="e" and here has only that letter and it's style changes */
+/* h1[title*="e"]{
+  color: darkcyan;
+} */
+h1:not([number^="998"]) {
+  color: red;
+}

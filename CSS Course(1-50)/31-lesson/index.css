@@ -1,0 +1,79 @@
+/* h1::first-line {
+  color: red;
+}
+h1::first-letter {
+  font-family: monospace;
+} */
+/* We change style  link or text through first letter and first-line. */
+/* li::marker {
+  color: brown;
+} */
+/* We change some list styles through marker.Marker works only with lists */
+
+/* h1::selection {
+  height: 15px;
+  color: red;
+} */
+/* We change selected elemt's style with selection.We give selection too * */
+
+/* .card {
+  width: fit-content;
+  height: fit-content;
+  border: 2px red solid;
+}
+.card::before {
+  content: "reaction";
+} */
+/* We may enter data's before given data's through before and we need to enter content in the given "before " element */
+/* .card::after {
+  content: "action";
+} */
+/* We may enter data's after given data's through after and we need to enter content in the given "after" element */
+/* Sometimes we save webpages fromn SQL injections */
+/* span::before {
+  content: "+";
+}
+button {
+  margin: 24px;
+}
+button:hover::before {
+  content: "Saqlash";
+  color: red;
+  position: absolute;
+  font-size: 8px;
+  background-color: black;
+  color: aliceblue;
+  border-radius: 2px;
+  padding: 4px;
+  top: -2px;
+  white-space: nowrap;
+} */
+
+.card {
+  width: 150px;
+  height: 250px;
+  border: 1px solid black;
+  background-image: url("./cat.jfif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.card::before {
+  content: "";
+  position: absolute; /*For cover display*/
+  inset: 0; /*inset equals top=0,bottom=0,right=0,left=0*/
+  background: white;
+  opacity: 0.6;
+}
+h1 {
+  position: relative;
+}
+/* .card::after {
+  content: "";
+  position: absolute; /*For cover display*/
+/* inset: 0; inset equals top=0,bottom=0,right=0,left=0*/
+/* background: white;
+  opacity: 0.6;
+} */
+/* If we turn on before image accept white background and then there comes h1 tags  */
+/* we want to give four values to inset. */
