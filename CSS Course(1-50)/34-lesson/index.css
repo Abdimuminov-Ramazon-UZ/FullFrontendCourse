@@ -1,0 +1,34 @@
+.cont {
+  width: 100%;
+  height: 300px;
+  border: 1px red solid;
+  /* background-image: linear-gradient(to left, black, red, yellow); */
+  /* we give several colors to linear-gradient through comma.these colors appears mixing on the display. We direct separating colors so we give right,left,bottom,top with to.*/
+  /* background-image: linear-gradient(45deg, green, purple, coral); */
+  /* We may give degres to first value and word to isn't important.If we give different degres to begin give colors from left bottom point.If we give to left top that mean 45 deg  */
+  /* background-image: linear-gradient(to left top,green ,purple,coral); */
+  /* background-image: linear-gradient(45deg, green 30%, purple 20%, coral 40%); */
+  /* If we give percents to colors these separate given percents the same as drawing right line and second color start this line.We give like percents to second and third colors third color become behind second color  */
+  /* background-image: linear-gradient(45deg,rgba(255,0,0,1),rgba(255,0,0,0)); */
+  /* If we give alpha through rgba to color these are trancparented */
+  background-image: repeating-linear-gradient(
+    to left,
+    black 10%,
+    red 20%,
+    yellow 40%
+  );
+  /* We write repeating-linear-gradient for repeating colors on the display */
+  /* background-image: radial-gradient(ellipse, black, red, yellow); */
+  /* We write radial -gradient for colors change block's center point.We may use repeating radial gradient */
+  /* background-image: conic-gradient(at 200px 50px, black, red, yellow, purple);
+  background-image: conic-gradient(from 90deg, black, red, yellow, purple); */
+  background-image: repeating-conic-gradient(
+    at 200px 50px,
+    black,
+    red,
+    yellow,
+    purple
+  );
+  /* We use conic gradient when we want to change colors like to turn watch and it works with radius .we use repeating also it*/
+  /* If we use at we reduce first color's border.We use from and we give  degres to it spread colors begin 90 deg*/
+}
