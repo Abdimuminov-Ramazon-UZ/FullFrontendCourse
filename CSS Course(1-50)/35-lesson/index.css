@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 200px;
+  height: 300px;
+  margin: 20px;
+  /* border: 2px black solid; */
+  /* We give three value and color to box shadow.Certainly,shadow apppears three sides.If we give only value shadow appears four sides,we give two values shadow appears two sides,however we give other values though its equals to 0 px to box shadow */
+  /* box-shadow: 5px 10px 10px black; */
+  box-shadow: 0px 0px 10px grey;
+}
+h3 {
+  /* text shadow likes bpx shadow */
+  border: 1px solid red;
+  width: 130px;
+  text-shadow: 5px 5px 5px black;
+  /* We give nowrap to white space words write on  one row */
+
+  /* white-space: nowrap; */
+  /* overflow: hidden; */
+  /* If we give ellipsis to text overflow not fit letters possessive instead three point on yhe display */
+  /* text-overflow: ellipsis; */
+  /* we give break word to word wrap not fit letters decend next row though it breaks */
+  /* word-wrap: break-word; */
+  /* we give keep all to word wrap words possesives articulately and it definites only hypen seprated words.*/
+  /* word-wrap: keep-all; */
+  /* we give break all to word wrap words possessives whole but labels are more */
+  /* word-wrap: break-all; */
+  /* We can write texts boxe's sides 
+  hoirizontal-tb is default. vertical -rl is vertical right left */
+  writing-mode:sideways-lr;
+}
