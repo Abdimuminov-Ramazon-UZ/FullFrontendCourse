@@ -1,0 +1,22 @@
+.con {
+  width: 100px;
+  height: 100px;
+  border: 2px red solid;
+  background: red;
+}
+.con:hover {
+  width: 200px;
+  height: 200px;
+  /* transition: width 2s height 1s; */
+  /* transition: all 1s; */
+  /* If we give width 2s to transition  when we hover button or elements' style.We must give starter values which changing styles to first styles.otherwise transition doesn't work.We give all to transition for accept all changing styles */
+  /*  we give several transition timimg function to transform .Such as:  
+  ease slow fast slow ->default; 
+  linear the same from start to end
+  ease-in slow start
+  ease out slow end
+  enase in out slow atart adn end
+  cubic-bezier (n,n,n,n) controls when given styles change such as width changes first and height changes second it gives possible controls timing functions*/
+  transition: all 2s linear 1s;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
