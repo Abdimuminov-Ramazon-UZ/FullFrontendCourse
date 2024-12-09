@@ -1,0 +1,45 @@
+.con {
+  width: 100px;
+  height: 100px;
+  border: 1px red solid;
+  position: relative;
+}
+/* Position  centralizes boxes through their top left corners*/
+.sqr {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border: 2px blue solid;
+  transform: translate(-50%, -50%);
+  /* We give translate to transform and it centralizes box through center.right now If we give only transform translate box centralizes through right bottom corner. We use transform when we need to rotate,move and etc.*/
+  /* transform:translate(-50%, -50%) rotate(45deg); */
+  /* We give rotate to transform and box rotates given degree and it ignores first transform value so we write first value in second transform's property */
+}
+
+button {
+  outline: none;
+  border: none;
+  margin: 10px;
+  background-image: linear-gradient(
+    to right,
+    rgb(119, 19, 77),
+    rgb(12, 46, 109)
+  );
+  color: white;
+  border-radius: 4px;
+  /* Rule: We must gve 2,4,8 px to border-radius. */
+  cursor: pointer;
+}
+button:active {
+  /* We give  scale  to transform button shrinks and enlarges  */
+  /* transform: scale(0.9, 0.9); */
+  /* scale has scaleX and scaleY across coordinatas,scale widh and scale width,height is across width and hegiht.Common scale width uses.value is ususally 0.99 */
+  /* transform: scaleX(0.8); */
+  /* opacity: 0.8; */
+  /* We give degrees to skew and it turns on given degree .If we give 90,180 to skew button disappears*/
+  /* transform: skew(5deg); */
+  /* Matrix is shorthand for transform value.matrix(scaleX(),skewY(),scaleY(),translateX(),translateY()) */
+  transform: matrix(0.9, 45deg, 10deg, 0.95, 10px, 10px);
+}
