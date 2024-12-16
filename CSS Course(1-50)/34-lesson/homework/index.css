@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: inline-block;
+}
+button {
+  width: 128px;
+  margin: 16px;
+  padding: 8px;
+  border: none;
+  border-radius: 24px;
+  background-image: linear-gradient(
+    to right,
+    rgb(41, 139, 41),
+    rgb(210, 238, 174)
+  );
+  color: white;
+}
+button:nth-child(2) {
+  width: 128px;
+  margin: 16px;
+  padding: 8px;
+  border: none;
+  border-radius: 24px;
+  background-image: linear-gradient(to left, rgb(99, 14, 8), rgb(192, 128, 31));
+  color: white;
+}
+button:nth-child(3) {
+  width: 128px;
+  margin: 16px;
+  padding: 8px;
+  border: none;
+  border-radius: 24px;
+  background-image: linear-gradient(
+    to left,
+    rgb(32, 21, 184),
+    rgb(98, 115, 214)
+  );
+  color: white;
+}
+button:nth-child(4) {
+  width: 128px;
+  margin: 16px;
+  padding: 8px;
+  border: none;
+  border-radius: 24px;
+  background-image: linear-gradient(
+    to left,
+    rgb(30, 110, 201),
+    rgb(59, 175, 221)
+  );
+  color: white;
+}
+button:nth-child(5) {
+  width: 128px;
+  margin: 16px;
+  padding: 8px;
+  border: none;
+  border-radius: 24px;
+  background-image: linear-gradient(
+    to left,
+    rgb(34, 235, 78),
+    rgb(127, 231, 127)
+  );
+  color: white;
+}
+button:nth-child(6) {
+  width: 128px;
+  margin: 16px;
+  padding: 8px;
+  border: none;
+  border-radius: 24px;
+  background-image: linear-gradient(
+    to right,
+    rgb(47, 209, 47),
+    rgb(202, 235, 85)
+  );
+  color: white;
+}
+button:nth-child(7) {
+  width: 128px;
+  margin: 16px;
+  padding: 8px;
+  border: none;
+  border-radius: 24px;
+  background-image: linear-gradient(
+    to left,
+    rgb(154, 34, 184),
+    rgb(177, 74, 180)
+  );
+  color: white;
+}
+button:nth-child(8) {
+  width: 128px;
+  margin: 16px;
+  padding: 8px;
+  border: none;
+  border-radius: 24px;
+  background-image: linear-gradient(to left, rgb(66, 11, 7), rgb(73, 35, 10));
+  color: white;
+}
+button:nth-child(9) {
+  width: 128px;
+  margin: 16px;
+  padding: 8px;
+  border: none;
+  border-radius: 24px;
+  background-image: linear-gradient(to left, rgb(99, 14, 8), rgb(192, 128, 31));
+  color: white;
+}
+button:nth-child(10) {
+  width: 128px;
+  margin: 16px;
+  padding: 8px;
+  border: none;
+  border-radius: 24px;
+  background-image: linear-gradient(
+    to left,
+    rgb(49, 30, 155),
+    rgb(167, 174, 211)
+  );
+  color: white;
+}
+button:nth-child(11) {
+  width: 128px;
+  margin: 16px;
+  padding: 8px;
+  border: none;
+  border-radius: 24px;
+  background-image: linear-gradient(
+    to left,
+    rgb(180, 107, 64),
+    rgb(196, 161, 110)
+  );
+  color: white;
+}

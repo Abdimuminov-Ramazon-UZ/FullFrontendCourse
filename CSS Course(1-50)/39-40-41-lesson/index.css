@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* We don't change CSS mechanisms as bacground-image,However we change it's variables through property and root */
+@property --color1 {
+  syntax: "color";
+  initial-value: red;
+  inherits: true;
+}
+@property --color2 {
+  syntax: "color";
+  initial-value: blue;
+  inherits: true;
+}
+:root {
+  --color1: red;
+  --color2: blue;
+}
+button {
+  width: 50%;
+  padding: 5px;
+  margin: 15px;
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  transition: all 0.4s;
+  background-image: linear-gradient(to right, var(--color1), var(--color2));
+}
+
+button:hover {
+  animation: gc 0.5s;
+}
+@keyframes gc {
+  from {
+    --color2: red;
+    --color1: blue;
+    color: aliceblue;
+  }
+  to {
+    --color2: rgb(101, 101, 212);
+    --color1: rgb(194, 99, 99);
+    color: yellow;
+  }
+}
+/* First hamburger menu */
+.main,
+.main2,
+.main3,
+.main4 {
+  width: 100px;
+  height: 50px;
+  /* border: 1px red solid; */
+  position: relative;
+  margin: 40px;
+}
+.bar,
+.foo,
+.int,
+.saw {
+  position: absolute;
+  width: 100px;
+  /* border: 1px blue solid; */
+}
+.bar1,
+.foo1,
+.int1,
+.saw1 {
+  top: 0px;
+  border: 2px black solid;
+}
+.bar2,
+.foo2,
+.int2,
+.saw2 {
+  top: 25px;
+  border: 2px black solid;
+}
+.bar3,
+.foo3,
+.int3,
+.saw3 {
+  top: 50px;
+  border: 2px solid black;
+}
+.main:hover .bar1 {
+  animation: bar1 2s;
+}
+.main:hover .bar3 {
+  animation: bar3 2s;
+}
+@keyframes bar1 {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 25px;
+    transition: all 0.4s;
+  }
+}
+@keyframes bar3 {
+  from {
+    top: 50px;
+  }
+  to {
+    top: 25px;
+    transition: all 0.4s;
+  }
+}
+/* Second hamburger menu */
+.main2:hover .foo1 {
+  animation: foo1 2s;
+}
+@keyframes foo1 {
+  50% {
+    top: 25px;
+    transform: rotate(22.5deg);
+  }
+  100% {
+    top: 25px;
+    transform: rotate(45deg);
+  }
+}
+.main2:hover .foo2 {
+  /* animation: foo2 2s; */
+  display: none;
+}
+
+/* @keyframes foo2 {
+  0% {
+    border: none;
+    display: none;
+  }
+  100% {
+    border: none;
+    display: none;
+  }
+} */
+.main2:hover .foo3 {
+  animation: foo3 2s;
+}
+
+@keyframes foo3 {
+  50% {
+    top: 25px;
+    transform: rotate(-22.5deg);
+  }
+  100% {
+    top: 25px;
+    transform: rotate(-45deg);
+  }
+}
+
+/* Third hamburger menu */
+.main3:hover .saw1 {
+  animation: saw1 2s;
+}
+
+@keyframes saw1 {
+  50% {
+    width: 50%;
+    top: 10px;
+    transform: rotate(22.5deg);
+  }
+  100% {
+    width: 50%;
+    top: 8px;
+    transform: rotate(45deg);
+  }
+}
+.main3:hover .saw2 {
+  animation: saw2 2s;
+}
+
+@keyframes saw2 {
+  50% {
+    left: -10px;
+    width: 60%;
+  }
+  100% {
+    left: -20px;
+    width: 63%;
+  }
+}
+.main3:hover .saw3 {
+  animation: saw3 2s;
+}
+
+@keyframes saw3 {
+  50% {
+    width: 50%;
+    transform: rotate(-22.5deg);
+    top: 43px;
+  }
+  100% {
+    width: 50%;
+    transform: rotate(-45deg);
+    top: 43px;
+  }
+}
+/* Fourth hamburger menu */
+.main4:hover .int1 {
+  animation: int1 2s;
+}
+@keyframes int1 {
+  50% {
+    width: 50%;
+    top: 8px;
+    transform: rotate(292.5deg);
+  }
+  100% {
+    width: 50%;
+    top: 8px;
+    transform: rotate(315deg);
+  }
+}
+.main4:hover .int2 {
+  animation: int2 2s;
+}
+
+@keyframes int2 {
+  50% {
+    left: 5px;
+    width: 60%;
+  }
+  100% {
+    left: 10px;
+    width: 63%;
+  }
+}
+.main4:hover .int3 {
+  animation: int3 2s;
+}
+@keyframes int3 {
+  50% {
+    top: 8;
+    transform: rotate(-292.5);
+    width: 50%;
+  }
+  100% {
+    top: 43px;
+    transform: rotate(-315deg);
+    width: 50%;
+  }
+}
+
+/* when use shorthand border we create several intersting items.first,we give four colors to border-color.We need to equal  zero width and height.then we give individual border styles we don't use border shorthand */
+.con {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  border: 5px;
+  border-style: solid;
+  /* border-color: red green blue yellow; */
+  /* If we give transparent three colors we create triangle through border and we change given color and rotate traingle to 90deg*/
+  border-color: black transparent transparent transparent;
+  border-color: black white;
+  /* We use this event to tooltips */
+  border-color: black green yellow red;
+}
