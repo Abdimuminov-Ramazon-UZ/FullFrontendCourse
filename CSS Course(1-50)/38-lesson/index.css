@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+button {
+  width: 120px;
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+/* button:hover {
+  /* width: 150px;
+  color: white;
+  background-color: blue;
+  padding: 1px;
+  margin: 15px; */
+/* animation: button 1s alternate; */
+/* } */
+/* button:active {
+  transform: scale(0.9);
+  
+} */
+/* We create  above elements through transform.We may crete elements by animation.if we create elements with tranistion element gets in shape given styles and return original form with given delay time when we give styles through animation element gets int shape by given styles,However it returns original form without delay time.
+Animation uses with transform and transition */
+
+.con {
+  width: 300px;
+  height: 200px;
+  border: 1px solid red;
+  margin: 10px;
+}
+
+/* keyframe helps to  distribute time.It has original two part first from which  give starter styles and to which we give next style,however we may give value through  time percents and element change given time percents.*/
+/* Animation is similar to transform and transition.animation is shorthand. animation has several properties.we give to name which we want to change element's name to animation-name. Second,animation-duration refers duration animation time.animation-delay refers  before animation done time,before delay time will pass after duration time starts.If we give minus value to delay it separates this time from duration time.
+animation-iteration-count is animation done times such as we give 2 to it animation done twice in the duration time then stopped animation.
+animation-direction is keyframes plan.If it is default keyframes works right,otherwise keyframes works given value.It has reverse,alternate,normal and alternate reverse.Alternate covers forwards and backwards animation.Reverse covers reversiv keyframe.*/
+/* animation-fill-mode controls animation's last styles.If we give forwards to it animation is done and stopped last animation screen.We give backwards element returns first style.We give backwards to it animation doesn't return first stlye.Other values both and none.If we give both animation similar to transform*/
+/* animation-timing-function is gives different ways thas time separates duration animation.It has ease,ease-out,linear,ease-i,ease-in-out,cubic-beizer. */
+button:hover {
+  animation-name: button;
+  animation-duration: 4s;
+  /* animation-delay: 2s; */
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+@keyframes button {
+  from {
+    width: 100px;
+    background-color: red;
+  }
+  to {
+    width: 170px;
+    background-color: coral;
+  }
+}
+
+.box {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: 2px blue solid;
+  /* animation: box 4s forwards; */
+}
+.con:hover .box {
+  animation: box 4s forwards;
+}
+@keyframes box {
+  0% {
+    top: 0%;
+    left: 0%;
+  }
+  25% {
+    top: 0%;
+    left: 100%;
+    transform: translate(-100%) rotate(360deg); /* We give transform translate for return center of the box.we give rotate through degrees */
+  }
+  50% {
+    top: 100%;
+    left: 100%;
+    transform: translate(-100%, -100%) rotate(180deg);
+  }
+  75% {
+    top: 100%;
+    left: 0%;
+    transform: translate(0%, -100%) rotate(270deg);
+  }
+  100% {
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 0%) rotate(360deg);
+  }
+}
