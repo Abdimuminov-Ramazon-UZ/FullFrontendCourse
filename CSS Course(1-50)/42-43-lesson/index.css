@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* We use webkit library for change  image's styles and create image's shadow other sides.If we want to change shadow's size we give second value to webkit*/
+.image {
+  width: 300px;
+  margin: 50px;
+  /* height: 300px; */
+  /* -webkit-box-reflect: right 100px; */
+  /* We use object fit for change image's size than parent box. we give contain to object fit for  adaptation image to box.fill is filled box  despite image's quality.Cover uqals fill.We use object-posittion for cut image different sizes,but it changes image's quality.we use sepia,saturate,blur,brightness,xcontrast,opacity,drop-shadow ,invert,hue-rotate,grayscale for filter image*/
+  object-fit: cover;
+  object-position: 40% 0%;
+}
+
+.con {
+  border: 2px red solid;
+  margin: 10px 10px 10px 10px;
+}
+/*column settings is helped control big data text. We create several columns on the display.we divide text to columns through column-count.column gap separates space between columns.column-rule gives several styles between columns.column-rule is shorthand to column*/
+
+/* h1 {
+  column-count: 3;
+  column-gap: 10px;
+  column-rule-color: red;
+  column-rule-style: dotted;
+  column-rule-width: 4px;
+  /* column-span: all; */
+/* resize: both; */
+/* overflow: scroll; */
+/* } */
+
+/*If we want to write paragraph or span datas to column we may separate columns through its.we may be set resize button to columns,However we give scroll  to overflow.*/
+/* When we give padding or margin to ineer elements,boxes size may be grow larger than first.If we give border-box to box sizing elements don't flow box.It is default sometimes programs */
+.box {
+  width: 150px;
+  height: 150px;
+  margin: 100px;
+  padding: 10px;
+  border: 2px red solid;
+  /* box-sizing: border-box; */
+}
+h1 {
+  /* padding: 30px; */
+  /* margin: 30px; */
+}
