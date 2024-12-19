@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+.con {
+  /* width: 500px; */
+  height: 200px;
+  display: flex;
+  border: 1px red solid;
+  gap: 10px;
+  margin: 50px;
+  align-items: center;
+}
+/* Flex advanced .We learnt about flex in beginner.these are advanced part.We create several boxes in the container.We may change possesions these boxes through order.we may give individual order to every box .flex is shorthand basis, shrink,grow*/
+
+.box {
+  width: 100px;
+  /* flex: 1; */
+  height: 50px;
+  border: 2px blue solid;
+  padding: 20px;
+  /* margin: 20px; */
+}
+.box1 {
+  order: 4;
+  flex-grow: 5;
+  /* When we give flex grow to box and to zoom display this box growing tiwce faster other than elements.flex-shrink works reverse while we zooming display this element  shrinks given value times.If we value to flex-basis elements change shrink and grow sizes given value*/
+}
+.box2 {
+  /* order: 0; */
+  flex-shrink: 7;
+}
+.box3 {
+  order: 2;
+  flex-basis: 75px;
+  align-self: flex-end;
+  /* We give align items for individual position every box it doesn't change align items value for that box.it write on align items. */
+}
+/*Of course,count begins from zero in programs.We start count boxes  first from zero.*/
