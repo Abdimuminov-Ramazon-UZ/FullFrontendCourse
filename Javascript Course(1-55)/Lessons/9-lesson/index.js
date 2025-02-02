@@ -73,3 +73,7 @@ console.log(str1.split(" ")); //[ '', '', '', '', '', 'webbrain', 'academy', '',
 console.log(str1.concat("hey", "console")); // webbrain academy    heyconsole
 
 //other string metods use for regular expressions when we learn its then we use its
+//loops we use for...of  loop for strings
+for (let char of str1) {
+  console.log(char);
+}
