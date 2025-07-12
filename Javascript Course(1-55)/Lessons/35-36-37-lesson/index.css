@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+}
+
+.box,
+.container {
+  /* width: 200px; */
+  /* height: 400px; */
+  margin: 20px;
+  /* border: red 2px solid; */
+  overflow: scroll;
+  /* background: blue; */
+}
+tr {
+  display: flex;
+}
+td {
+  display: flex;
+  margin: 2px;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+.highlite {
+  background-color: red;
+  color: white;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 48px;
+  position: sticky;
+  margin-top: 0;
+ top: 0;
+  transition: 0.7s;
+  /* box-shadow: 19px 19px 20px 0px; */
+}
