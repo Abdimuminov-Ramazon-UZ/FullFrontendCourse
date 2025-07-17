@@ -1,0 +1,13 @@
+p {
+  padding: 20px;
+  border: 1px blue solid;
+}
+.title {
+  border: 1px solid pink;
+}
+.victom {
+  width: 200px;
+  height: 200px;
+  border: 2px dotted rgb(53, 53, 151);
+  opacity: 0;
+}
