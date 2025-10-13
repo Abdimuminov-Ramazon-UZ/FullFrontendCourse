@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>Modules</h1>
+    <!-- <script async type="module" src="./index.js"></script>
+    <script async type="module" src="./mock.js"></script>
+    <script async type="module" src="./module.js"></script>
+    --->
+    <!-- script doesn't require type="module" -->
+    <script>
+      async function load() {
+        let say = await import("./mock.js");
+        say.hi(); // Hello!
+        say.bye(); // Bye!
+        say.default(); // Module loaded (export default)!
+      }
+    </script>
+    <button onclick="load()">Click me</button>
+  </body>
+</html>
