@@ -1,6 +1,6 @@
 //Tutorial for Samar Badriddinov
 //Important datas
-//differencies of varibles
+//Differencies of variables
 //JavaScript is more sensitive in variable names we don't create characteric variables
 // let max = 'anna'
 // let tim = 'jean'
@@ -14,6 +14,7 @@
 // }
 //we may change person's properties so we don't create absolute constantas in Js
 //Important part of variables is difference between let and var
+//===================//
 //Data types
 //undefined,null,string,number,object,array,boolean others are objects
 //if we  create variable and it is empty  machine returns undefined if we need special empty variable  so we give null to it
@@ -22,7 +23,8 @@
 // console.log(freeze, cool)
 //interpolation is that we use bacticks
 // console.log(cool + 1 + freeze)
-//conditions
+//===================//
+//Conditions
 // let trafficlight = 'red'
 // switch (trafficlight) {
 // 	case 'green':
@@ -36,10 +38,11 @@
 // 		break
 // }
 //if else is strictly than switch case
+//===================//
 //Cycles
 //when we need steps similar to others we use cycles
-let number = 2
+let number = 2;
 while (number > 6) {
-	console.log(1)
-	number++
+  console.log(1);
+  number++;
 }
