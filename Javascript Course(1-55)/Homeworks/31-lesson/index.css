@@ -1,0 +1,23 @@
+/* #tables {
+  border: 1px black solid;
+  border-collapse: collapse;
+}
+#tables td,
+th {
+  padding: 8px;
+  border: 1px solid black;
+} */
+/* #data[data-order-set="new"] {
+  color: green;
+}
+#data[data-order-set="old"] {
+  color: black;
+}
+#data[data-order-set="canselled"] {
+  color: yellow;
+} */
+p {
+  width: 150px;
+  height: 200px;
+  overflow-y: scroll;
+}
