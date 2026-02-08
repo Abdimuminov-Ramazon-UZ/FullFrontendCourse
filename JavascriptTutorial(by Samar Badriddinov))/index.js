@@ -99,3 +99,7 @@ let number = 2;
 // }
 //Array has empty elements when we create with array constructor
 //Copies for variables
+let a = 10;
+let b = a;
+b = b + 10;
+console.log(a, b);
