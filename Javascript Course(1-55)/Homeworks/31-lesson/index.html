@@ -1,12 +1,422 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./index.css" />
     <title>Document</title>
   </head>
+
   <body>
-    <h1>Miscellanuos</h1>
-    <script async src="./index.js"></script>
+    <!-- <h1>Miscellanous</h1`> -->
+    <!-- <script>
+      alert(document.body.lastChild.nodeType);
+    </script> -->
+    <!-- <h1>UI</h1> -->
+    <!-- <ol>
+      <li>Truth about Dom</li>
+      <li>Wrong data about Dom</li>
+      <li>Wrong data about Dom</li>
+      <hr />
+      <li>Wrong data about Dom</li>
+      <li>Wrong data about Dom</li>
+      <li>Wrong data about Dom</li>
+    </ol>
+
+    <table id="table" style="border: 1p red solid">
+      <thead>
+        <tr>
+          <td>one</td>
+          <td>two</td>
+          <td>three</td>
+          <td>four</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>one</td>
+          <td>two</td>
+          <td>three</td>
+          <td>four</td>
+        </tr>
+        <tr>
+          <td>one</td>
+          <td>two</td>
+          <td>three</td>
+          <td>four</td>
+        </tr>
+        <tr>
+          <td>one</td>
+          <td>two</td>
+          <td>three</td>
+          <td>four</td>
+        </tr>
+        <tr>
+          <td>one</td>
+          <td>two</td>
+          <td>three</td>
+          <td>four</td>
+        </tr>
+        <tr>
+          <td>one</td>
+          <td>two</td>
+          <td>three</td>
+          <td>four</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>one</td>
+          <td>two</td>
+          <td>three</td>
+          <td>four</td>
+        </tr>
+      </tfoot>
+    </table>
+    <hr />
+    <h1>Exercsie 1</h1>
+    <div id="elem">Users:</div>
+    <ul>
+      <li>John</li>
+      <li>Pete</li>
+    </ul>
+    <p>Answer 1: yes div is DOM node</p>
+    <p>Answer 2: yes ul is DOM node</p>
+    <p>Answer 3: No They are text node</p>
+    <h1>Exercise 2</h1>
+    <p>yes,because here elements have not siblings</p>
+    <h1>Exercise 3</h1>
+    <table id="tables">
+      <thead>
+        <tr>
+          <th>1:1</th>
+          <td>1:2</td>
+          <td>1:3</td>
+          <td>1:4</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>2:1</th>
+          <td>2:2</td>
+          <td>2:3</td>
+          <td>2:4</td>
+        </tr>
+        <tr>
+          <th>3:1</th>
+          <td>3:2</td>
+          <td>3:3</td>
+          <td>3:4</td>
+        </tr>
+        <tr>
+          <th>4:1</th>
+          <td>4:2</td>
+          <td>4:3</td>
+          <td>4:4</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr /> -->
+    <!-- <div>First div</div>
+
+    <script>
+      let divs = document.getElementsByTagName("div");
+      alert(divs.length); // 1
+    </script>
+
+    <div>Second div</div>
+
+    <script>
+      alert(divs.length); // 2
+      console.log(divs);
+    </script>
+    <div>First div</div>
+
+    <script>
+      let divs2 = document.querySelectorAll("div");
+      alert(divs2.length); // 1
+    </script>
+
+    <div>Second div</div>
+
+    <script>
+      alert(divs2.length); // 1
+      console.log("141", divs2);
+    </script> -->
+
+    <!-- <h1>Selectors</h1>
+    <div>
+      <h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. At dolor,
+          quidem laboriosam dolorem possimus corporis necessitatibus optio esse
+          exercitationem ullam?zs
+        </p>
+      </h1>
+    </div>
+    <div id="item">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda,
+        est?
+      </p>
+    </div>
+    <div class="numbers">
+      <ol>
+        <li>1</li>
+      </ol>
+    </div>
+    <h1>Exercise 1</h1>
+    <form name="search">
+      <label
+        >Search the site:
+        <input type="text" name="search" />
+      </label>
+      <input type="submit" value="Search!" />
+    </form>
+
+    <hr />
+
+    <form name="search-person">
+      Search the visitors:
+      <table id="age-table">
+        <tr>
+          <td>Age:</td>
+          <td id="age-list">
+            <label>
+              <input type="radio" name="age" value="young" />less than 18</label
+            >
+            <label>
+              <input type="radio" name="age" value="mature" />18-50</label
+            >
+            <label>
+              <input type="radio" name="age" value="senior" />more than
+              50</label
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>Additionally:</td>
+          <td>
+            <input type="text" name="info[0]" />
+            <input type="text" name="info[1]" />
+            <input type="text" name="info[2]" />
+          </td>
+        </tr>
+      </table>
+
+      <input type="submit" value="Search!" />
+    </form>
+    <h1>Emmet abrevations</h1>
+    <div>
+      <ol>
+        <li class="item1">item</li>
+        <li class="item2">item</li>
+        <li class="item3">item</li>
+        <li class="item4">item</li>
+        <li class="item5">item</li>
+        <li class="item6">item</li>
+        <li class="item7">item</li>
+        <li class="item8">item</li>
+        <li class="item9">item</li>
+        <li class="item10">item</li>
+      </ol>
+    </div> -->
+    <!-- <h1>nodes and tags</h1>
+    <div value="text" style="background-color: red" class="item">Hi div</div>
+    <div hidden>wow it elements hidden</div>
+    <div id="data" data-order-set="new">New</div> -->
+
+    <!-- Exercise 1 -->
+    <!-- <ul>
+      <li>
+        Animals
+        <ul>
+          <li>
+            Mammals
+            <ul>
+              <li>Cows</li>
+              <li>donkeys</li>
+              <li>dogs</li>
+              <li>tigers</li>
+            </ul>
+          </li>
+          <li>
+            Other
+            <ul>
+              <li>Snakes</li>
+              <li>Birds</li>
+              <li>Lizards</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        Fishes
+        <ul>
+          <li>Guppy</li>
+          <li>Angelfish</li>
+        </ul>
+        Sea
+        <ul>
+          <li>Sea trout</li>
+        </ul>
+      </li>
+    </ul> -->
+    <!-- Exercise 2 -->
+    <!-- 1 -->
+    <!-- Exercise 3 -->
+    <!-- <script>
+      let body = document.body;
+
+      body.innerHTML = "" + body.tagName + "-->
+
+    <!-- alert(body.firstChild.data); // what's here?
+      // BODY and we lose all old codes -->
+    <!-- </script> -->
+    <!-- Exercise 3 -->
+    <!-- it belongs to window -->
+    <!-- Attributes -->
+    <!-- Exercise 1 -->
+    <!-- <div data-widget-name="menu">Choose the genre</div>
+    <script>
+      let div = document.querySelectorAll("div");
+      console.log(div[3].dataset.widgetName);
+    </script> -->
+    <!-- Exercise 2 -->
+    <!-- <a name="list">the list</a> -->
+    <!-- <ul>
+      <li><a href="http://google.com">http://google.com</a></li>
+      <li><a href="/tutorial">/tutorial.html</a></li>
+      <li><a href="local/path">local/path</a></li>
+      <li><a href="ftp://ftp.com/my.zip">ftp://ftp.com/my.zip</a></li>
+      <li><a href="http://nodejs.org">http://nodejs.org</a></li>
+      <li><a href="http://internal.com/test">http://internal.com/test</a></li>
+    </ul> -->
+    <!-- <script>
+      let element = document.querySelectorAll("a");
+      console.log(element);
+      for (let item of element) {
+        console.log(item.href);
+        console.log(item.getAttribute("href"));
+        let name = `${item.getAttribute("href")}`;
+        if (name.includes(":")) {
+          item.setAttribute("style", "color:orange;");
+        }
+      }
+      console.log();
+    </script> -->
+    <!-- modifying -->
+    <!-- <div class="item">item</div> -->
+    <!-- Exercise 1 -->
+    <!-- second and third ways are the same -->
+    <!-- Exercise 2 -->
+    <!-- <ol id="elem">
+      <li>Hello</li>
+      <li>World</li>
+    </ol> -->
+
+    <!-- <script> -->
+    <!-- // function clear(elem) {
+      //   for (let i of elem.children) {
+      //     let empty = "";
+      //     i.textContent = empty;
+      //   }
+      // }
+
+      // clear(elem); // clears the list -->
+    <!-- // </script> -->
+    <!-- Exercise 3 -->
+    <!-- // <table id="table">
+    //   aaa
+    //   <tr>
+    //     <td>Test</td>
+    //   </tr>
+    // </table> -->
+
+    <!-- <script>
+      console.log(table); // the table, as it should be
+
+      table.remove();
+      // why there's still "aaa" in the document?
+      // due to bad HTML codes
+    </script> -->
+    <!-- Exercise 4 -->
+    <!-- <script>
+      let text = document.createElement("h1");
+      text.textContent = "your job list";
+      document.body.append(text);
+      let ul = document.createElement("ul");
+      document.body.append(ul);
+
+      while (true) {
+        let answer = prompt("what job are you ?", "");
+        if (!answer) {
+          break;
+        }
+        let li = document.createElement("li");
+        li.textContent = answer;
+        ul.append(li);
+      }
+    </script> -->
+    <!-- Exercsie 5 -->
+    <script>
+      let data = {
+        Fish: {
+          trout: {},
+          salmon: {},
+        },
+
+        Tree: {
+          Huge: {
+            sequoia: {},
+            oak: {},
+          },
+          Flowering: {
+            "apple tree": {},
+            magnolia: {},
+          },
+        },
+      };
+      let ul = document.createElement("ul");
+      document.body.append(ul);
+      // while(true){
+      //   let li=document.createElement("li")
+      // for(let i of data){
+      //
+      // li.textContent
+      // }
+      // }
+    </script>
+    <!-- Styles -->
+    <h1>Styles of element</h1>
+    <h1>Element size and scrolling</h1>
+    <p id="paragraph">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+      iusto repudiandae molestiae minima, nihil adipisci dolores omnis cum
+      expedita vel tempore amet nesciunt hic, ratione possimus impedit beatae
+      totam blanditiis nemo modi sequi voluptatum, praesentium perspiciatis
+      dolorum? Pariatur delectus beatae optio ipsam sed suscipit culpa
+      consequuntur fugiat nam ipsa praesentium a nisi, adipisci quas dolor
+      dignissimos. Ratione nihil quibusdam quam voluptatem, enim officia ipsam
+      excepturi est debitis deleniti reprehenderit? Soluta nam hic quo,
+      aspernatur molestiae molestias optio distinctio ullam, unde asperiores
+      temporibus ipsa officiis reprehenderit enim omnis mollitia impedit quidem
+      amet rem obcaecati odit! Explicabo autem dolor quis commodi! Quibusdam
+      deserunt asperiores nulla itaque natus quos animi distinctio sed culpa
+      ullam error nisi illo obcaecati exercitationem soluta inventore temporibus
+      veniam cupiditate magnam excepturi minus quia, aut explicabo. Suscipit in
+      labore assumenda, delectus fuga nihil quia quibusdam explicabo nemo at
+      ipsam praesentium, modi vel error possimus eos aliquam nisi voluptatem!
+      Tenetur optio mollitia saepe dolor, doloremque quis perferendis a harum
+      tempore commodi in quam magnam autem molestiae voluptates dolorum! Quis
+      assumenda soluta, ratione optio debitis quas suscipit quasi aliquam nulla
+      reprehenderit corporis similique tenetur praesentium, nam mollitia ipsa
+      quibusdam dolores at, voluptatem harum dolore laboriosam? Tenetur hic
+      deserunt cum repudiandae possimus.
+    </p>
   </body>
+  <script src="./index.js"></script>
 </html>
