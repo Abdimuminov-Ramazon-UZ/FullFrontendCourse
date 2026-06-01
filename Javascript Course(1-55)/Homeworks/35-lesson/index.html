@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <h1>Forms</h1>
+    <!-- <form action="#" id="experiment" name="forms">
+      <fieldset>
+        <legend>Login</legend>
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        <input type="text" name="login" />
+        <input type="radio" name="age" value="18+" />
+        <input type="radio" name="age" value="to 18" /><input
+          type="radio"
+          name="age"
+          value="40+"
+        />
+        <select name="selection" id="selection" multiple>
+          <option selected="true" value="five">5</option>
+          <option value="zero">0</option>
+          <option value="four">4</option>
+        </select>
+      </fieldset>
+    </form> -->
+    <form action="#" onsubmit="{alert(this.value)}">
+      <fieldset>
+        <legend>Login</legend>
+        <!-- <input id="login" type="email" placeholder="Please enter your email" />
+        <div id="error"><h2>Please Enter Your Email</h2></div>
+        <ul>
+          <li tabindex="-1">1</li>
+          <li tabindex="0">2</li>
+          <li tabindex="2">3</li>
+          <li tabindex="1">4</li>
+        </ul> -->
+        <!-- <textarea
+          placeholder="text"
+          name="text"
+          id="textsplain"
+          cols="30"
+          rows="10"
+        ></textarea> -->
+        <!-- onchange="{alert(this.value)}" -->
+        <input type="text" name="text" id="txt" />
+        <h1>oninput <span id="result"></span></h1>
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>

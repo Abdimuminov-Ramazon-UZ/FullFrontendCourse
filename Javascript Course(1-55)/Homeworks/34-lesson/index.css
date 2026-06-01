@@ -1,0 +1,120 @@
+/* #border {
+  width: 24px;
+  height: 24px;
+  background-color: green;
+  border-top-right-radius: 21px;
+  border-bottom-right-radius: 21px;
+  border-top-width: 20px;
+  margin-right: 8px;
+}
+#face {
+  display: flex;
+  font-size: large;
+  padding: 16px;
+}
+#menu {
+  padding: 16px;
+  display: none;
+}
+#container {
+  background-color: burlywood;
+  width: 400px;
+}
+#element {
+  display: flex;
+  margin: 20px;
+}
+button {
+  height: 32px;
+  /* margin: 20px 0 20px 0; */
+/* position:fixed; */
+/* color: rgb(194, 194, 240);
+  background-color: rgb(65, 63, 55);
+  border-radius: 12%;
+  box-shadow: 2px;
+  pointer-events: stroke;
+} */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  gap: 50px;
+  padding: 50px;
+  background: #f0f0f0;
+}
+
+/* Ikkala konteyner uchun umumiy stil */
+.container {
+  width: 300px;
+  min-height: 400px;
+  background: white;
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container h3 {
+  text-align: center;
+  color: #333;
+  margin-top: 0;
+}
+
+/* Sudraladigan elementlar */
+.drag-item {
+  background: #4caf50;
+  color: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  cursor: move;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.drag-item:hover {
+  background: #45a049;
+  transform: scale(1.02);
+}
+
+
+.drag-item.dragging {
+  opacity: 0.5;
+}
+
+
+.container.drag-over {
+  background: #e8f5e9;
+  border-color: #4caf50;
+}
+p {
+  border: 1px red solid;
+  /* width: max-content; */
+  padding: 4px;
+  /* display: none; */
+}
+
+/* #mouse {
+  /* border: 1px red solid; */
+/* width: fit-content; */
+/* } */
+/* .selected {
+  background-color: green;
+  color: red;
+}
+.divergent {
+  width: 450px;
+  height: max-content;
+  /* scroll-behavior: overflow; */
+  /* background-color: blue;
+} */ 
+.updown {
+  display: flex;
+}
+.first {
+  width: 120px;
+  margin: 16px;
+  position: fixed;
+}
+.second {
+  margin-left: 96px;
+}

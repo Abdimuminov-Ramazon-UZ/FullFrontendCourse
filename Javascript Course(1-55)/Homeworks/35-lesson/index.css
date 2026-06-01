@@ -1,0 +1,11 @@
+.divergent {
+  color: blue;
+  background-color: pink;
+}
+.error {
+  color: red;
+  background-color: aliceblue;
+}
+:focus {
+  outline: 1px dashed pink;
+}
