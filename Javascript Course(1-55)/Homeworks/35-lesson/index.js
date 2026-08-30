@@ -55,6 +55,7 @@ text.oninput = () => {
 //we have enter or submit button for submit if we give submit to another input internal form we fix return false to onsubmit metod if we write other codes in JavaScript codes sowe use submit() metod
 console.log(typeof document.readyState);
 //we have readyState for every step of loaded and created elements of code in JS
+<<<<<<< HEAD
 //Mutation observer is more powerful metod without using react or vue frameworks
 let observer = new MutationObserver((mutations) => {
   for (let mutation of mutations) {
@@ -87,3 +88,13 @@ demoElem.innerHTML = `A code snippet is below:
     <pre class="language-css"><code>.class { margin: 5px; } </code></pre>
   </div>
 `;
+=======
+//Select and Range
+let nRange = new Range();
+console.log(nRange);
+let maxP = document.querySelector(".max");
+let selection = document.getSelection();
+
+console.log(maxP);
+console.log(selection);
+>>>>>>> 895e0ddca4d985f0425fef25cb99644472d7ebb2
