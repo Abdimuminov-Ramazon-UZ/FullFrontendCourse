@@ -38,3 +38,18 @@
   /* We give align items for individual position every box it doesn't change align items value for that box.it write on align items. */
 }
 /*Of course,count begins from zero in programs.We start count boxes  first from zero.*/
+.container {
+  width: 500px;
+  border: blue 2px solid;
+  height: 500px;
+  margin: 50px;
+  display: flex;
+}
+.boxes {
+  width: 64px;
+  height: 64px;
+  border: red 1px solid;
+  margin: 4px;
+  gap: 8px;
+  align-items: center;
+}

@@ -55,3 +55,35 @@ text.oninput = () => {
 //we have enter or submit button for submit if we give submit to another input internal form we fix return false to onsubmit metod if we write other codes in JavaScript codes sowe use submit() metod
 console.log(typeof document.readyState);
 //we have readyState for every step of loaded and created elements of code in JS
+//Mutation observer is more powerful metod without using react or vue frameworks
+let observer = new MutationObserver((mutations) => {
+  for (let mutation of mutations) {
+    // examine new nodes, is there anything to highlight?
+
+    for (let node of mutation.addedNodes) {
+      // we track only elements, skip other nodes (e.g. text nodes)
+      if (!(node instanceof HTMLElement)) continue;
+
+      // check the inserted element for being a code snippet
+      if (node.matches('pre[class*="language-"]')) {
+        Prism.highlightElement(node);
+      }
+
+      // or maybe there's a code snippet somewhere in its subtree?
+      for (let elem of node.querySelectorAll('pre[class*="language-"]')) {
+        Prism.highlightElement(elem);
+      }
+    }
+  }
+});
+
+let demoElem = document.getElementById("highlight-demo");
+
+observer.observe(demoElem, { childList: true, subtree: true });
+demoElem.innerHTML = `A code snippet is below:
+  <pre class="language-javascript"><code> let hello = "world!"; </code></pre>
+  <div>Another one:</div>
+  <div>
+    <pre class="language-css"><code>.class { margin: 5px; } </code></pre>
+  </div>
+`;

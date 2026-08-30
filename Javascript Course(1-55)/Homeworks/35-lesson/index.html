@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -26,7 +26,14 @@
         </select>
       </fieldset>
     </form> -->
-    <form action="#" onsubmit="{alert(this.value)}">
+    <form
+      action="#"
+      onsubmit="
+        {
+          alert(this.value);
+        }
+      "
+    >
       <fieldset>
         <legend>Login</legend>
         <!-- <input id="login" type="email" placeholder="Please enter your email" />
@@ -50,6 +57,10 @@
         <button type="submit">Submit</button>
       </fieldset>
     </form>
+    <div id="highlight-demo">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi,
+      distinctio?
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>
