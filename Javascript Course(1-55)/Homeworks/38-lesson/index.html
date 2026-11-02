@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Shadow doms</h1>
+    <custom-menu>
+      <title>Shirinlik menyusi</title>
+      <item>Lolipop</item>
+      <item>Mevali tost</item>
+      <item>Kek</item>
+    </custom-menu>
+    <!-- <script>
+      //   customElements.define(
+      //     "user-card",
+      //     class extends HTMLElement {
+      //       connectedCallback() {
+      //         this.attachShadow({ mode: "open" });
+      //         this.shadowRoot.innerHTML = `
+      //           <div>Ism:
+      //             <slot name="username"></slot>
+      //           </div>
+      //           <div>Tug'ilgan kun:
+      //             <slot name="birthday"></slot>
+      //           </div>
+      //         `;
+      //       }
+      //     }
+      //   );
+      customElements.define(
+        "custom-menu",
+        class extends HTMLElement {
+          connectedCallback() {
+            this.attachShadow({ mode: "open" });
+
+            // tmpl shadow DOM shabloni (yuqorida)
+            this.shadowRoot.append(tmpl.content.cloneNode(true));
+
+            // biz light DOM tugunlarini tanlay olmaymiz, shuning uchun slotdagi bosishlarni boshqaraylik
+            this.shadowRoot.querySelector('slot[name="title"]').onclick =
+              () => {
+                // menyuni ochish/yopish
+                this.shadowRoot
+                  .querySelector(".menu")
+                  .classList.toggle("closed");
+              };
+          }
+        }
+      );
+    </script>
+
+    <user-card>
+      <span slot="username">Jon Smit</span>
+      <span slot="birthday">01.01.2001</span>
+    </user-card> -->
+    <style>
+        user-card {
+          --user-card-field-color: green;
+        }
+      </style>
+      
+      <template id="tmpl">
+        <style>
+          .field {
+            color: var(--user-card-field-color, black);
+          }
+        </style>
+        <div class="field">Ism: <slot name="username"></slot></div>
+        <div class="field">Tug'ilgan kun: <slot name="birthday"></slot></div>
+      </template>
+      
+      <script>
+      customElements.define('user-card', class extends HTMLElement {
+        connectedCallback() {
+          this.attachShadow({mode: 'open'});
+          this.shadowRoot.append(document.getElementById('tmpl').content.cloneNode(true));
+        }
+      });
+      </script>
+      
+      <user-card>
+        <span slot="username">Jon Smit</span>
+        <span slot="birthday">01.01.2001</span>
+      </user-card>
+    <script src="index.js"></script>
+  </body>
+</html>
+<!-- shadow root nima uchun kerakki qachonki private DOM elementlari uchun kerak deganda root Dom ga kirish va unga yozish uchun kerak bir marta ishlatlgan <custom-element > qayta ishlailish imkonlari bor -->
