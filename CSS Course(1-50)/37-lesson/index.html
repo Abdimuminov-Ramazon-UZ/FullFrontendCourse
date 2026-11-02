@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,6 +11,18 @@
     <!-- Transition -->
     <div class="con">
       <div class="sqr"></div>
+    </div>
+    <div id="spawn">
+      <div id="mil">
+        <script>
+          let size = getComputedStyle(spawn).width;
+          if (size === "200px") {
+            mil.textContent = "<h1>Losses</h1>";
+          }else{
+             mil.textContent = "<h1>Losseees</h1>";
+          }
+        </script>
+      </div>
     </div>
   </body>
 </html>
